@@ -1,0 +1,9 @@
+.navbar-container{
+    background: 'linear-gradient(190deg, #18C8FF, #933FFE)',
+}
+
+.nav-link{
+    color: white;
+    font-size: var(--small-text-size);
+    font-weight: 400;
+}

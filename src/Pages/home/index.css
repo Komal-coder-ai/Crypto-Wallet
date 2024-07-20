@@ -1,0 +1,15 @@
+.HomeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: cover; 
+    background-color: #f0f0f0; 
+}
+.HomeContainer h1 {
+    width: 60%;
+    color: var(--white-color);
+    font-size: var(--larger-text-size);
+    text-align: center; 
+    font-family: var(--font-family-inter);
+    font-weight: 900;
+}

@@ -1,0 +1,41 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  /* border: 1px solid red ; */
+}
+:root {
+    --primary-button-color: #18C8FF;
+    --secondary-button-color: #933FFE;
+    --linear-gradient: #18C8FF,#123b52,#0c1b26, #933FFE, #1E1E1E;
+    /* --icon-gradient: linear-gradient(52.09deg, #982DEC -11.18%, #DC8DF8 58.92%, #A9C4F3 98.44%); */
+   --icon-gradient:  #982DEC -11.18%, #DC8DF8 58.92%, #A9C4F3 98.44%;
+
+
+
+/* Text Colors */
+--white-color: #FFFFFF;
+--paragraph-color: #898CA9;
+--link-color: #B982FF;
+
+/* Font Sizes */
+--smaller-text-size: 16px;
+--small-text-size: 14px;
+--text-50-size: 50px;
+--medium-text-size: 32px;
+--larger-text-size: 85px;
+
+
+/* Font weight */
+--font-weight-900: 900;
+
+/* Font family */
+--font-family-inter: 'Inter', sans-serif;
+
+
+
+/* background-color: ; */
+
+--bg-black:#1A1B23
+  }
+  
+ 

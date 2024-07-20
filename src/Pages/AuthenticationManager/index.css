@@ -1,0 +1,47 @@
+.boxes {
+    background: var(--bg-black);
+    gap: 32px;
+    border-radius: 25px;
+  
+ 
+}
+.text-center{
+  padding: 32px 24px 32px 24px;
+}
+
+.iconbox {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.boxes h3{
+    color: var(--white-color);
+    font-weight: 800;
+    font-style: var(--medium-text-size);
+    line-height: 41.6px;
+}
+.boxes p{
+    color: var(--paragraph-color);
+
+
+font-weight: 400;
+font-size: var(--smaller-text-size);
+line-height: 24px;
+
+}
+
+.boxes a{
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--smaller-text-size);
+}
+.starimg{
+    position: relative;
+    top: -30px;
+}

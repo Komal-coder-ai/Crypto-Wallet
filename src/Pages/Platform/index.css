@@ -1,0 +1,31 @@
+.PlatFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.PlatFormContainer h2 {
+
+    width: 60%;
+    color: var(--white-color);
+    font-size: var(--text-50-size);
+    text-align: center;
+    font-family: var(--font-family-inter);
+    font-weight: 900;
+
+}
+
+.PlatFormContainer p {
+
+    color: var(--paragraph-color);
+
+
+    font-weight: 400;
+    font-size: var(--smaller-text-size);
+    line-height: 24px;
+
+
+
+}
