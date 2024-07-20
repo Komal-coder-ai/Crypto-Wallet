@@ -1,15 +1,16 @@
 import React from 'react';
 
-const ButtonCom = ({name}) => {
+const ButtonCom = ({name,bgcolor,border}) => {
   const gradientStyle = {
-    background: 'linear-gradient(190deg, #18C8FF, #933FFE)',
-    border: 'none',
+    background: bgcolor,
+    border:border,
     borderRadius: '10px',
     color: '#fff',
     padding: '10px 20px',
     cursor: 'pointer',
     fontSize: '16px',
     boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+   
   };
 
   return (

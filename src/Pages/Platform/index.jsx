@@ -1,25 +1,36 @@
-import React from 'react'
-import ButtonCom from '../../components/button'
-import './index.css'
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap'; // Importing Bootstrap components
+import ButtonCom from '../../components/button'; // Assuming ButtonCom is correctly defined
+import './index.css'; // Import your custom CSS file
+import platformstar from '../../assets/start/platformstar.svg';
+import platformbg from '../../assets/ss/platformbg.png'
 
-import bgimg from '../../assets/bgimag/platformbg.svg'
 const Platform = () => {
-    return (
-        <div className='PlatFormContainer'
-        
-        style={{
-            background: `linear-gradient(to bottom right, rgba(11, 11, 15, 0.9), rgba(18, 59, 82, 0.8)), url(${bgimg})`,
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'right bottom', 
-            minHeight: '100vh', 
-            position: 'relative',
-          }}>
-            <h2>A cryto mining platform that invest in you    </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor</p>
-            <ButtonCom name="Get Started"></ButtonCom>
-           
-        </div>
-    )
-}
+  return (
+    <div className='PlatFormContainer'>
+      <Container fluid>
+        <Row className='justify-content-center align-items-center' style={{
+           backgroundImage: `url(${platformbg})`,
+           backgroundSize: "cover",
+           backgroundRepeat: "no-repeat",
+          
+          backgroundPosition: 'right bottom',
+          minHeight: '100vh',
+          position: 'relative',
+          color: '#FFFFFF', // Set text color
+          textAlign: 'center' // Center align text
+        }}>
+          <Col xs={10} md={7} lg={7} className='text-center'>
+            <h2 className='mb-4'>A crypto mining platform that invests in you</h2>
+            <p className='mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ButtonCom name="Get Started" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none"/>
+         
+            <img src={platformstar} alt="Platform Star" className='platformstar img-fluid' />
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
+};
 
-export default Platform
+export default Platform;

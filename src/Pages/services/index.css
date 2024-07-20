@@ -1,0 +1,7 @@
+.text-center h1{
+    color: var(--white-color);
+    font-weight: 900;
+}
+.text-center p{
+    color: var(--paragraph-color);
+}

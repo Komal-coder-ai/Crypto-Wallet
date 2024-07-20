@@ -8,6 +8,10 @@ import Home from '../../Pages/home/Index';
 import './index.css'
 import AuthenticationManager from '../../Pages/AuthenticationManager/Index';
 import Platform from '../../Pages/Platform';
+import Service from '../../Pages/services/Index';
+import Buyandsell from '../../Pages/Buyandsell';
+import headerbg from '../../assets/ss/headerbg.png'
+
 const NavbarComponent = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -19,11 +23,11 @@ const NavbarComponent = () => {
     <>
       <Navbar expand="lg"
         style={{
-          background: `linear-gradient(to bottom right, rgba(11, 11, 15, 0.9), rgba(18, 59, 82, 0.8)), url(${bgimg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          // minHeight: '400px', // Adjust height as needed
-          position: 'relative', // Ensure positioning for overlapping elements
+          backgroundImage: `url(${headerbg})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+          // minHeight: '100vh',
+          position: 'relative',
         }}
       >
         {/* Logo */}
@@ -32,8 +36,8 @@ const NavbarComponent = () => {
           src="/logo.svg"
           width="30"
           height="30"
-          className="d-inline-block align-top m-4"
-          alt="Logo"
+          className="d-inline-block align-top m-4 " 
+          // alt="Logo"
         />{' '}
    
       </Navbar.Brand> */}
@@ -42,7 +46,9 @@ const NavbarComponent = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
         {/* Navbar links */}
-        <Navbar.Collapse id="basic-navbar-nav  ">
+        <Navbar.Collapse id="basic-navbar-nav   "
+        className='d-flex justify-content-center'
+        >
           <Nav className="mr-auto ml-4 "
           >
             <Nav.Link
@@ -97,11 +103,11 @@ const NavbarComponent = () => {
         <Nav className="ml-auto">
           <Nav.Link
             className='nav_Link' as={HashLink} smooth to="#about" onClick={closeMenu}>
-            <ButtonCom >Sign In</ButtonCom>
+            <ButtonCom name="Sign In " bgcolor="none" border="1px solid  ">Sign In</ButtonCom>
           </Nav.Link>
           <Nav.Link
-            className='nav_Link' className="ml-2" as={HashLink} smooth to="#about" onClick={closeMenu}>
-            <ButtonCom name="Sign Up"></ButtonCom>
+            className="nav_Link ml-2" as={HashLink} smooth to="#about" onClick={closeMenu}>
+            <ButtonCom name="Sign Up" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none"></ButtonCom>
           </Nav.Link>
         </Nav>
       </Navbar>
@@ -119,10 +125,15 @@ const NavbarComponent = () => {
           <AuthenticationManager></AuthenticationManager>
         </div>
         <div id="">
-         <Platform></Platform>
+          <Platform></Platform>
         </div>
-
-           </div>
+        <div id="">
+          <Service></Service>
+        </div>
+        <div id="">
+          <Buyandsell></Buyandsell>
+        </div>
+      </div>
 
     </>
   );

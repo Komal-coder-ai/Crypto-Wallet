@@ -1,6 +1,5 @@
 import React from 'react';
-import bgimg from '../../assets/bgimage.svg';
-
+import homebg from '../../assets/ss/homebg.png'
 import './index.css'
 
 const Home = () => {
@@ -12,9 +11,9 @@ const Home = () => {
 
                 className='HomeContainer'
                 style={{
-                    background: `linear-gradient(to bottom right, rgba(11, 11, 15, 0.9), rgba(18, 59, 82, 0.8)), url(${bgimg})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundImage:`url(${homebg})`,
+                    backgroundSize:"cover",
+                    backgroundRepeat:"no-repeat",
                     minHeight: '100vh',
                     position: 'relative',
                 }}
@@ -25,14 +24,8 @@ const Home = () => {
 
 
             </div>
-            {/* <div className="auth"
-           style={{
-            height:"100vh"
-           }}
-           >
-
-           <AuthenticationManager></AuthenticationManager>
-           </div> */}
+           
+           
         </div>
     );
 };

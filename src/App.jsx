@@ -7,6 +7,7 @@
   import Navbar from "./components/header/Index";
   import ButtonCom from "./components/button";
   import Home from "./Pages/home/Index";
+import FooterCom from "./components/footer/Index";
   const App = () => {
     return (
       <div>
@@ -17,7 +18,7 @@
           <Routes>
             {/* <Route path="/" element={<Home></Home>}> </Route> */}
           </Routes>
-        
+      <FooterCom></FooterCom>
         </Router>
       </div>
     );
