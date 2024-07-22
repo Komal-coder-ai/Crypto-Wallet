@@ -4,6 +4,7 @@ import bag from '../../assets/icon/bag.svg';
 import { Row, Col } from 'react-bootstrap';
 import './index.css';
 import investingbg from '../../assets/ss/investingbg.png'
+import bagbg from '../../assets/icon/bagbg.svg'
 const Investing = () => {
   return (
     <div className='investingcontainer'
@@ -25,7 +26,11 @@ const Investing = () => {
         </Col>
         
         <Col xs={12} sm={6} md={6} lg={6} className="d-flex justify-content-center">
-          <div className="image-container">
+          <div className="image-container"
+          style={{
+            background:`url(${bagbg})`
+          }}
+          >
             <img src={bag} alt="Bag Icon" className="img-fluid" />
           </div>
         </Col>

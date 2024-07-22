@@ -9,7 +9,7 @@
   import Home from "./Pages/home/Index";
 import FooterCom from "./components/footer/Index";
 // import fullbg from 'D:\Crypto Wallet\src\assets\ss\fullbg.png'
-import fullbg from './assets/ss/fullbg.png'
+import fullbg from './assets/ss/Full_bg.svg'
   const App = () => {
     return (
       <div>

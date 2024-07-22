@@ -1,43 +1,28 @@
-import React from 'react'
-import './index.css'
-import servicelogo from '../../assets/icon/servicelogo.svg'
-import ButtonCom from '../../components/button'
-import coinbg from '../../assets/ss/coinbg.png'
+import React from 'react';
+import './index.css';
+import servicelogo from '../../assets/icon/servicelogo.svg';
+import ButtonCom from '../../components/button';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Service = () => {
   return (
-    <>
-
-      <div
-        className='row d-flex justify-content-center align-content-center '
-        style={{
-                  height: "100vh",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          width:"100vw"
-        }}
-
-      ><div className="row">
-          <div className="col d-flex ">
-            {/* <img src={servicelogo} alt="" /> */}
+    <Container fluid className="d-flex justify-content-center align-items-center">
+      <Row>
+        <Col xs={12} sm={6} className="d-flex">
+          <img src={servicelogo} alt="" className="img-fluid" />
+        </Col>
+        <Col xs={12} sm={6} className="d-flex flex-column justify-content-center align-items-center">
+          <div className="text">
+            <h1>24/7 access to full service customer support</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ButtonCom name="Get Started" bgcolor="none" border="1px solid" />
           </div>
-          <div className="col d-flex flex-column justify-content-center align-items-center">
-            <div className="text-center">
-              <h1 className="">24/7 access to full service customer support</h1>
-              <p className="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <ButtonCom name="Get Started" bgcolor="none" border="1px solid" />
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-
-    </>
-  )
-}
-
-export default Service
+export default Service;
