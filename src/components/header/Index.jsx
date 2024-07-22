@@ -31,25 +31,25 @@ const NavbarComponent = () => {
         //   backgroundSize: "cover",
         //   backgroundRepeat: "no-repeat",
         // }}
-        variant="dark"
+   
       >
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu} className="navbar-toggler" />
 
         <Navbar.Collapse id="basic-navbar-nav d-flex" className={`justify-content-center navbar-collapse ${menuOpen ? 'show' : ''}`}>
           <Nav className="ml-auto d-flex justify-content-center" onClick={closeMenu}>
-            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#home">
+            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
               Buy / Sell
             </Nav.Link>
-            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#AuthenticationManager">
+            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
               Grow
             </Nav.Link>
-            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#how-we-work">
+            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
               Markets
             </Nav.Link>
-            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#about">
+            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
               Business
             </Nav.Link>
-            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#support">
+            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
               Support
             </Nav.Link>
           </Nav>
@@ -57,9 +57,9 @@ const NavbarComponent = () => {
 
         <Nav className="ml-auto d-flex flex-row justify-content-sm-around buttoncontainer">
           <Nav.Link className="nav_Link" as={HashLink} smooth to="#about">
-            <ButtonCom name="Sign In" bgcolor="none" border="1px solid">Sign In</ButtonCom>
+            <ButtonCom name="Sign In" bgcolor="none" border="1px solid"></ButtonCom>
           </Nav.Link>
-          <Nav.Link className="nav_Link ml-2" as={HashLink} smooth to="#about">
+          <Nav.Link className="nav_Link " as={HashLink} smooth to="#about">
             <ButtonCom name="Sign Up" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none"></ButtonCom>
           </Nav.Link>
         </Nav>

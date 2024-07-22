@@ -8,8 +8,8 @@
 
 .navbar-toggler {
   position: absolute;
-  right: 15px; /* Adjust as needed */
-  top: 15px; /* Adjust as needed */
+  right: 15px; 
+  color: white;
 }
 
 .navbar-collapse {
@@ -64,8 +64,17 @@
 @media (max-width: 575.98px) {
   .center_link {
     background: black;
+    width: 50vw;
+    margin-left: auto;
   }
   .buttoncontainer{
     margin-right: 54px;
+  }
+  .navbar{
+    display: flex;
+  }
+  .nav_Link{
+   padding: 0;
+   margin-right: 20px;
   }
 }
