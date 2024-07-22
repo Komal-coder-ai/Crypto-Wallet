@@ -37,7 +37,7 @@
 }
 
 .TableRow {
-  
+
   background-color: var(--bg-black);
   border: 1px solid #2B2C3B;
 }
@@ -70,16 +70,20 @@
   text-align: left;
 
 }
-.col_2{
+
+.col_2 {
   color: var(--link-color);
 }
+
 .col_3 {
   text-align: end;
 }
-.TableContainer .col_2{
+
+.TableContainer .col_2 {
   color: var(--link-color);
 }
-.TableContainer .col_4{
+
+.TableContainer .col_4 {
   color: var(--green-color);
   text-align: end;
 }
@@ -87,28 +91,42 @@
 
 @media (max-width: 575.98px) {
   /* Extra small devices (portrait phones) */
-  
-.TableContainer .table_data {
 
-  font-size: 10px;}
+  .TableContainer .table_data {
 
-.TableContainer {
-  width: 100%;
- 
-}
+    font-size: 10px;
+  }
+
+  .TableContainer {
+    width: 100%;
+
+  }
+
+  .ButAndselltext h2 {
+    font-size: 30px;
+    font-weight: 900;
+
+  }
 
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .TableContainer .table_data {
 
-  
+
     font-size: 10px;
-   
-  
+
+
   }
+
   .TableContainer {
     width: 100%;
-   
+
+  }
+
+  .ButAndselltext h2 {
+    font-size: 30px;
+    font-weight: 900;
+
   }
 }

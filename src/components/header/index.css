@@ -63,7 +63,7 @@
 
 @media (max-width: 575.98px) {
   .center_link {
-    background: black;
+    /* background: black; */
     width: 50vw;
     margin-left: auto;
   }
