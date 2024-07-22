@@ -5,11 +5,7 @@ import footerbg from '../../assets/ss/bgFooter.png'
 const FooterCom = () => {
     return (
         <div className=""
-        style={{
-            backgroundImage:`url(${footerbg})`,
-            backgroundSize:"cover",
-            backgroundRepeat:"no-repeat"
-        }}
+   
         >
             
             <Container>

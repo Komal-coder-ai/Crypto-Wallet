@@ -5,9 +5,9 @@ const ReceiveTransmission = () => {
   return (
     <div className='ReceiveTransmission'
     style={{
-      background:`url(${Receivetransmissions_bg})`,
-      backgroundSize:"cover",
-      backgroundRepeat:"no-repeat",
+      // background:`url(${Receivetransmissions_bg})`,
+      // backgroundSize:"cover",
+      // backgroundRepeat:"no-repeat",
   }}
     >
       <h2>Receive transmissions</h2>

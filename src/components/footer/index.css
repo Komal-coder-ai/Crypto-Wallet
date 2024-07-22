@@ -31,6 +31,14 @@
 
 
 
+
 .email-input:focus::before {
   opacity: 1;
+}
+
+
+@media (max-width: 575.98px) {
+  .footer-container{
+    padding: 20px;
+  }
 }

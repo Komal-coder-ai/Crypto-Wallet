@@ -175,7 +175,7 @@ const Buyandsell = () => {
                   <td className="table_data col_4">+1.68%</td>
                   {/* <td className="table_data">  <SimpleLineChart /></td> */}
                   <td
-                    className="table_data"
+                    className="table_data ForMobile"
                   ><img src={linebarchart} alt="" /></td>
                   <td className='d-flex table_data'>
                     <a href="#trade-now" className="TableLink">
@@ -193,7 +193,7 @@ const Buyandsell = () => {
                   <td className="table_data col_4">+4.36%</td>
                   {/* <td className="table_data">  <SimpleLineChart /></td> */}
                   <td
-                    className="table_data"
+                    className="table_data ForMobile"
                   ><img src={linebarchart} alt="" /></td>
                   <td className='d-flex table_data'>
                     <a href="#trade-now" className="TableLink">
@@ -212,7 +212,7 @@ const Buyandsell = () => {
                   <td className="table_data col_4">+3.43%</td>
                   {/* <td className="table_data">  <SimpleLineChart /></td> */}
                   <td
-                    className="table_data"
+                    className="table_data ForMobile"
                   ><img src={linebarchart} alt="" /></td>
                   <td className='d-flex table_data'>
                     <a href="#trade-now" className="TableLink">
@@ -230,7 +230,7 @@ const Buyandsell = () => {
                   <td className="table_data col_4">-2.62%</td>
                   {/* <td className="table_data">  <SimpleLineChart /></td> */}
                   <td
-                    className="table_data"
+                    className="table_data ForMobile"
                   ><img src={linebarchart} alt="" /></td>
                   <td className='d-flex table_data'>
                     <a href="#trade-now" className="TableLink">
@@ -249,7 +249,7 @@ const Buyandsell = () => {
                   <td className="table_data col_4">+7.56%</td>
                   {/* <td className="table_data">  <SimpleLineChart /></td> */}
                   <td
-                    className="table_data"
+                    className="table_data ForMobile"
                   ><img src={linebarchart} alt="" /></td>
                   <td className='d-flex table_data'>
                     <a href="#trade-now" className="TableLink">

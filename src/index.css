@@ -47,16 +47,30 @@
 
 /* Media queries for responsive design */
 @media (max-width: 575.98px) {
-  /* Extra small devices (portrait phones) */
-  .navbar .nav-link {
-    font-size: 14px; /* Adjust font size for smaller screens */
-  }
+.ForMobile{
+  display: none;
+}
+   
+
+.ServiceContainer{
+  margin-left: 11vw;
+  margin-right: 20px;
+  width: 90vw;
+  
+}
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* Small devices (landscape phones) */
-  .navbar .nav-link {
-    font-size: 15px; /* Adjust font size for small screens */
+  .ForMobile{
+    display: none;
+    
+  }
+  .ServiceContainer{
+   
+    margin-left: 11vw;
+    margin-right: 20px;
+    width: 90vw;
   }
 }
 
