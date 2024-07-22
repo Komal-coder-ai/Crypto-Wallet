@@ -11,14 +11,8 @@ import star from '../../assets/start/starAuth.svg';
 const AuthenticationManager = () => {
   return (
     <div
-      className="d-flex justify-content-center align-items-center" // Center content horizontally and vertically
-      style={{
-        backgroundImage: `url(${authbg})`,
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        minHeight: '100vh',
-        position: 'relative',
-      }}
+      className="d-flex justify-content-center align-items-center Authenticationcontainer" // Center content horizontally and vertically
+     
     >
       <Row className="justify-content-evenly">
         {/* Column 1 */}

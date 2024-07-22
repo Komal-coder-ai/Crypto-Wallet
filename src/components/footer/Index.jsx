@@ -4,7 +4,7 @@ import './index.css';
 import footerbg from '../../assets/ss/bgFooter.png'
 const FooterCom = () => {
     return (
-        <div className="footer-container"
+        <div className=""
         style={{
             backgroundImage:`url(${footerbg})`,
             backgroundSize:"cover",
@@ -13,13 +13,18 @@ const FooterCom = () => {
         >
             
             <Container>
-                <Row>
+                <Row className='footer-container'>
                     <Col xs={12} md={6} lg={4} className='EmailCon'>
                         <p>
                             CoinFlip, the world’s leading bitcoin ATM operator, makes it so flippin’ easy to buy and sell bitcoin via cash, card, or bank transfer. Sign up to get the latest in CoinFlip news, discounts, and more.
                         </p>
-                        <input type="email" placeholder="Email Address" />
-                        <p>© 2021 GPD Holdings, LLC FinCEN MSB</p>
+                        <input type="email" placeholder="Email Address" className="email-input " 
+                        style={{
+                            borderRadius:"10px"
+                        }}
+                        />
+
+                        <p className='mt-4'>© 2021 GPD Holdings, LLC FinCEN MSB</p>
                     </Col>
 
                     <Col xs={6} md={3} lg={2} className='menucon'>
@@ -40,7 +45,7 @@ const FooterCom = () => {
 
                     </Col>
 
-                    <Col xs={6} md={3} lg={2}>
+                    <Col xs={6} md={3} lg={4} >
                         <p>Privacy Policy and Terms of Service</p>
                         <p>CoinFlip Privacy Policy</p>
                         <p>CoinFlip Biometrics Privacy Policy</p>

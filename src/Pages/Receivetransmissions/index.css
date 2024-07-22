@@ -1,0 +1,25 @@
+.ReceiveTransmission {
+    background: black;
+    color: white; /* Text color for content */
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ReceiveTransmission h2 {
+    font-size: var(--text-50-size);
+    margin-bottom: 10px;
+    font-weight: 900;
+    /* font-family: Inter   ; */
+  }
+  
+  .ReceiveTransmission p {
+    font-size: var(--smaller-text-size);
+    margin-bottom: 20px;
+    color: var(--paragraph-color);
+    line-height: 24px;
+font-weight: 400;
+}
+  

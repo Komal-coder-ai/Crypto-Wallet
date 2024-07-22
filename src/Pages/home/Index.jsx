@@ -1,19 +1,18 @@
 import React from 'react';
 import homebg from '../../assets/ss/homebg.png'
 import './index.css'
-
+import ButtonCom from '../../components/button';
+// import ButtonCom from '../../components/button/index'
 const Home = () => {
     return (
         <div className=""
         >
-            
+
             <div
 
                 className='HomeContainer'
                 style={{
-                    backgroundImage:`url(${homebg})`,
-                    backgroundSize:"cover",
-                    backgroundRepeat:"no-repeat",
+
                     minHeight: '100vh',
                     position: 'relative',
                 }}
@@ -23,9 +22,12 @@ const Home = () => {
                 >We make crypto clear and simple</h1>
 
 
+                <div className="GetStartedBtn"><ButtonCom name="Get Started" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none"
+                    className=""
+                ></ButtonCom></div>
             </div>
-           
-           
+
+
         </div>
     );
 };

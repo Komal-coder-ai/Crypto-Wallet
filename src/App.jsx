@@ -8,13 +8,23 @@
   import ButtonCom from "./components/button";
   import Home from "./Pages/home/Index";
 import FooterCom from "./components/footer/Index";
+// import fullbg from 'D:\Crypto Wallet\src\assets\ss\fullbg.png'
+import fullbg from './assets/ss/fullbg.png'
   const App = () => {
     return (
       <div>
         <Router>
 
+<div className=""
+ style={{
+  backgroundImage: `url(${fullbg})`,
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+}}
+>
 
           <Navbar></Navbar>
+</div>
           <Routes>
             {/* <Route path="/" element={<Home></Home>}> </Route> */}
           </Routes>

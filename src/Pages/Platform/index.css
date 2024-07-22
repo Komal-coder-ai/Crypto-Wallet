@@ -1,33 +1,37 @@
 .PlatFormContainer {
-   
-    height: 100vh;
-}
-
-.PlatFormContainer h2 {
-
-   
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .PlatFormContainer h2 {
     color: var(--white-color);
     font-size: var(--text-50-size);
-    text-align: center;
     font-family: var(--font-family-inter);
     font-weight: 900;
-
-}
-
-.PlatFormContainer p {
-
+  }
+  
+  .PlatFormContainer p {
     color: var(--paragraph-color);
-
-
     font-weight: 400;
     font-size: var(--smaller-text-size);
     line-height: 24px;
-
-
-
-}
-.platformstar{
+  }
+  
+  .platformstar {
     position: absolute;
-    right: 100px;
-    bottom: 250px;
-}
+    right: 0;
+    bottom: 0;
+    max-width: 50%; /* Adjust size as needed */
+    transform: translate(-20%, 50%); /* Adjust position relative to container */
+  }
+  
+  @media (max-width: 768px) {
+    .platformstar {
+      max-width: 40%; /* Decrease size for smaller screens */
+      transform: translate(-30%, 50%); /* Adjust position for smaller screens */
+    }
+  }
+  

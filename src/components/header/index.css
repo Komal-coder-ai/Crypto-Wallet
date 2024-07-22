@@ -1,9 +1,71 @@
-.navbar-container{
-    background: 'linear-gradient(190deg, #18C8FF, #933FFE)',
+/* index.css */
+
+.navbar {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.nav-link{
-    color: white;
-    font-size: var(--small-text-size);
-    font-weight: 400;
+.navbar-toggler {
+  position: absolute;
+  right: 15px; /* Adjust as needed */
+  top: 15px; /* Adjust as needed */
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 100%; /* Ensures the menu opens below the navbar */
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-bg-color); /* Adjust as per your design */
+  z-index: 1000; /* Ensure it appears above other content */
+  transition: height 0.3s ease; /* Smooth transition */
+}
+
+.nav-link {
+  padding: 1rem 2rem;
+  color: var(--white-color);
+  text-align: center; /* Centers the nav links */
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.navbar-nav {
+  margin: 0 auto; /* Centers the navbar items horizontally */
+}
+
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none; /* Hide toggler button on larger screens */
+  }
+
+  .navbar-collapse {
+    position: relative;
+    background: none;
+    top: auto;
+    width: auto;
+    transition: none;
+  }
+
+  .navbar-nav {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .center_link {
+    background: black;
+  }
+  .buttoncontainer{
+    margin-right: 54px;
+  }
 }

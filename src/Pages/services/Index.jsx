@@ -11,15 +11,15 @@ const Service = () => {
       <div
         className='row d-flex justify-content-center align-content-center '
         style={{
-          background: `url(${coinbg})`,
-          height: "100vh",
+                  height: "100vh",
           backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
+          backgroundSize: "cover",
+          width:"100vw"
         }}
 
       ><div className="row">
           <div className="col d-flex ">
-            <img src={servicelogo} alt="" />
+            {/* <img src={servicelogo} alt="" /> */}
           </div>
           <div className="col d-flex flex-column justify-content-center align-items-center">
             <div className="text-center">

@@ -1,7 +1,30 @@
-.text-center h1{
-    color: var(--white-color);
-    font-weight: 900;
-}
-.text-center p{
-    color: var(--paragraph-color);
-}
+    .text-center h1{
+        color: var(--white-color);
+        font-weight: 900;
+    }
+    .text-center p{
+        color: var(--paragraph-color);
+    }
+
+
+      
+      @media (max-width: 768px) {
+        .text-center h1 {
+          font-size: 2rem; 
+        }
+      
+        .text-center p {
+          font-size: 1rem; 
+        }
+        .text-center {
+
+            margin-top: 100px;
+         
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+          }
+      }
+      
+     
+      

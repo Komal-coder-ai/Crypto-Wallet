@@ -49,3 +49,12 @@
     bottom: 100px;
     left: 10px;
 }
+
+
+
+@media (max-width: 575.98px) {
+
+    .Authenticationcontainer {
+       padding: 50px;
+    }
+  }

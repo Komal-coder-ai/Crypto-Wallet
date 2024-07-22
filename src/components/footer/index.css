@@ -1,0 +1,36 @@
+.footer-container {
+  padding: 100px;
+  color: var(--paragraph-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style for the input element */
+.email-input {
+  border: 1px solid transparent; 
+  border-image-source: linear-gradient(180deg, #18C8FF 14.89%, #933FFE 85.85%);
+  border-image-slice: 1; 
+  padding: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+  background: none;
+  border-radius: 20px;
+  color: white; /* Text color for input */
+
+}
+
+.email-input::placeholder {
+  color: #565976;
+}
+
+.email-input:focus {
+  box-shadow: 0 0 0 2px var(--primary-button-color);
+  
+}
+
+
+
+.email-input:focus::before {
+  opacity: 1;
+}
