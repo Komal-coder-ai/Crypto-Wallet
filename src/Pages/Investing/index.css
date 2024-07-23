@@ -55,3 +55,19 @@
 
     }
 }
+
+@media screen and (min-width: 618px) and (max-width: 677px) {
+    .investingcontainer {
+        padding: 10px;
+        margin: 60px;
+    }
+    
+    .investingcontainer h2 {
+        font-size: 30px;
+    }
+    .PlatFormContainer h2 {
+       
+        font-style: 30px;
+    }
+  }
+

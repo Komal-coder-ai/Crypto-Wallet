@@ -14,7 +14,7 @@ const AuthenticationManager = () => {
       className="d-flex justify-content-center align-items-center Authenticationcontainer" // Center content horizontally and vertically
      
     >
-      <Row className="justify-content-evenly">
+      <Row className="justify-content-evenly container mt-5">
         {/* Column 1 */}
         <Col xs={12} md={3} className="mb-3 boxes">
           <div className="text-center">
@@ -26,7 +26,7 @@ const AuthenticationManager = () => {
         </Col>
 
         {/* Column 2 */}
-        <Col xs={12} md={3} className="mb-3 boxes">
+        <Col xs={12} md={3} className="mb-3 boxes ">
           <div className="text-center">
             <img src={login} alt="" />
             <h3 className="mt-2">Login</h3>

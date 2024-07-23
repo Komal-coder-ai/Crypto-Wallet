@@ -12,7 +12,7 @@ const Service = () => {
           <img src={servicelogo} alt="" className="img-fluid ForMobile" />
         </Col>
         <Col xs={12} sm={6} md={6} lg={6} xl={6}  className="d-flex flex-column justify-content-center align-items-center ServiceContainer">
-          <div className="text">
+          <div className="text container">
             <h1>24/7 access to full service customer support</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

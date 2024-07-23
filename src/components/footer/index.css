@@ -7,16 +7,17 @@
 
 /* Style for the input element */
 .email-input {
-  border: 1px solid transparent; 
+  border: 1px solid transparent;
   border-image-source: linear-gradient(180deg, #18C8FF 14.89%, #933FFE 85.85%);
-  border-image-slice: 1; 
+  border-image-slice: 1;
   padding: 12px;
   font-size: 16px;
   outline: none;
   transition: box-shadow 0.3s ease;
   background: none;
   border-radius: 20px;
-  color: white; /* Text color for input */
+  color: white;
+  /* Text color for input */
 
 }
 
@@ -26,7 +27,7 @@
 
 .email-input:focus {
   box-shadow: 0 0 0 2px var(--primary-button-color);
-  
+
 }
 
 
@@ -38,7 +39,23 @@
 
 
 @media (max-width: 575.98px) {
-  .footer-container{
+  .footer-container {
     padding: 20px;
+  }
+}
+
+@media screen and (min-width: 618px) and (max-width: 677px) {
+  .footer-container {
+    padding: 20px;
+    padding-top: 40px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer-container {
+    padding: 20px;
+    padding-top: 40px;
+   
   }
 }

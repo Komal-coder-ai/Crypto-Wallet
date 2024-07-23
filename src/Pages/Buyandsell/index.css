@@ -130,3 +130,9 @@
 
   }
 }
+
+@media screen and (min-width: 618px) and (max-width: 677px) {
+  .ButAndselltext{
+   margin-top: 50px;
+  }
+}
