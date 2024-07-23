@@ -1,45 +1,66 @@
 .PlatFormContainer {
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .PlatFormContainer h2 {
-    color: var(--white-color);
-    font-size: var(--text-50-size);
-    font-family: var(--font-family-inter);
-    font-weight: 900;
-  }
-  
-  .PlatFormContainer p {
-    color: var(--paragraph-color);
-    font-weight: 400;
-    font-size: var(--smaller-text-size);
-    line-height: 24px;
-  }
-  
-  .platformstar {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    max-width: 50%; /* Adjust size as needed */
-    transform: translate(-20%, 50%); /* Adjust position relative to container */
-  }
-  
-  @media (max-width: 768px) {
-    .platformstar {
-      max-width: 40%; /* Decrease size for smaller screens */
-      transform: translate(-30%, 50%); /* Adjust position for smaller screens */
-    }
-  }
-  @media screen and (min-width: 618px) and (max-width: 677px) {
-    
-    .PlatFormContainer h2 {
-     
-        font-size: 30px !important;
-        margin-top: 50px;
-    }
-  }
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.PlatFormContainer h2 {
+  color: var(--white-color);
+  font-size: var(--text-50-size);
+  font-family: var(--font-family-inter);
+  font-weight: 900;
+}
+
+.PlatFormContainer p {
+  color: var(--paragraph-color);
+  font-weight: 400;
+  font-size: var(--smaller-text-size);
+  line-height: 24px;
+}
+
+.platformstar {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 50%;
+  /* Adjust size as needed */
+  transform: translate(-20%, 50%);
+  /* Adjust position relative to container */
+}
+
+@media (max-width: 768px) {
+  .platformstar {
+    max-width: 40%;
+    /* Decrease size for smaller screens */
+    transform: translate(-30%, 50%);
+    /* Adjust position for smaller screens */
+  }
+}
+
+@media screen and (min-width: 618px) and (max-width: 677px) {
+
+  .PlatFormContainer h2 {
+
+    font-size: 30px !important;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  .PlatFormContainer {
+
+    margin-top: 150px;
+
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .PlatFormContainer {
+
+    margin-top: 170px;
+  }
+}

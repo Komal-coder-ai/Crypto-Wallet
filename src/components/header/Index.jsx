@@ -49,7 +49,12 @@ const NavbarComponent = () => {
           </Nav>
         </Navbar.Collapse>
 
-        <Nav className="d-flex flex-row justify-content-sm-around buttoncontainer">
+        <Nav className="d-flex flex-row justify-content-sm-around buttoncontainer"
+        style={{
+          marginRight:"50px"
+        }}
+
+        >
           <Nav.Link className="nav_Link" as={HashLink} smooth to="#about">
             <ButtonCom name="Sign In" bgcolor="none" border="1px solid"></ButtonCom>
           </Nav.Link>

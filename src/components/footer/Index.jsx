@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 import './index.css';
 import footerbg from '../../assets/ss/bgFooter.png'
+import { FaArrowRight } from 'react-icons/fa';
 const FooterCom = () => {
     return (
         <div className=""
@@ -14,11 +15,20 @@ const FooterCom = () => {
                         <p>
                             CoinFlip, the world’s leading bitcoin ATM operator, makes it so flippin’ easy to buy and sell bitcoin via cash, card, or bank transfer. Sign up to get the latest in CoinFlip news, discounts, and more.
                         </p>
-                        <input type="email" placeholder="Email Address" className="email-input " 
-                        style={{
-                            borderRadius:"10px"
-                        }}
-                        />
+                        <div className="input-container">
+        <input
+          type="email"
+          placeholder="Email Address"
+          className="email-input"
+          style={{
+            width: "100%", // Adjust width as needed
+            borderRadius: "10px", // Rounded corners
+            padding: "10px", // Adjust padding for better appearance
+            paddingRight: "40px" // Space for the icon on the right
+          }}
+        />
+        <FaArrowRight className="input-icon" />
+      </div>
 
                         <p className='mt-4'>© 2021 GPD Holdings, LLC FinCEN MSB</p>
                     </Col>

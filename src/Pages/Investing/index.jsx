@@ -15,7 +15,7 @@ const Investing = () => {
        
     }}
     >
-      <Row className="align-items-center">
+      <Row className="align-items-center container">
         {/* Column for text content */}
         <Col xs={12} sm={6} md={6} lg={6}>
           <div className="text-content">

@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css'; // Assuming this is your CSS file for styling
 import Receivetransmissions_bg from '../../assets/ss/Receivetransmissions_bg.png'
+import { FaArrowRight } from 'react-icons/fa';
 const ReceiveTransmission = () => {
   return (
     <div className='ReceiveTransmission'
@@ -16,12 +17,20 @@ const ReceiveTransmission = () => {
           color: "var(--white-color)"
         }}
       > Privacy policy↗</span></p>
-      <input type="email" placeholder="Email Address" className="email-input"
-        style={{
-          width: "300px",
-           borderRadius:"10px"  
-        }}
-      />
+       <div className="input-container">
+        <input
+          type="email"
+          placeholder="Email Address"
+          className="email-input"
+          style={{
+            width: "100%", // Adjust width as needed
+            borderRadius: "10px", // Rounded corners
+            padding: "10px", // Adjust padding for better appearance
+            paddingRight: "40px" // Space for the icon on the right
+          }}
+        />
+        <FaArrowRight className="input-icon" />
+      </div>
     </div>
   );
 };

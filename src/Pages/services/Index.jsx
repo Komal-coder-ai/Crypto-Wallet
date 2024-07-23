@@ -8,10 +8,10 @@ const Service = () => {
   return (
     <Container fluid className="d-flex justify-content-center align-items-center container">
       <Row>
-        <Col xs={12} sm={6} md={6} lg={6} xl={6}  className="d-flex ForMobile">
+        <Col xs={10} sm={5} md={5} lg={6} xl={6}  className="d-flex ForMobile">
           <img src={servicelogo} alt="" className="img-fluid ForMobile" />
         </Col>
-        <Col xs={12} sm={6} md={6} lg={6} xl={6}  className="d-flex flex-column justify-content-center align-items-center ServiceContainer">
+        <Col xs={10} sm={5} md={5} lg={4} xl={4}  className="d-flex flex-column justify-content-center align-items-center ServiceContainer">
           <div className="text container">
             <h1>24/7 access to full service customer support</h1>
             <p>
