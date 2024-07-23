@@ -11,7 +11,9 @@ import headerbg from '../../assets/ss/headerbg.png';
 import './index.css';
 import ReceiveTransmission from '../../Pages/Receivetransmissions/Index';
 import Investing from '../../Pages/Investing';
-import fullbg from '../../assets/ss/fullbg.png'
+import fullbg from '../../assets/ss/fullbg.png';
+import { TfiAlignJustify } from "react-icons/tfi";
+
 const NavbarComponent = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -25,18 +27,10 @@ const NavbarComponent = () => {
 
   return (
     <>
-      <Navbar expand="lg" className="navbar"
-        // style={{
-        //   backgroundImage: `url(${headerbg})`,
-        //   backgroundSize: "cover",
-        //   backgroundRepeat: "no-repeat",
-        // }}
-   
-      >
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu} className="navbar-toggler" />
+      <Navbar expand="lg" className="navbar">
 
-        <Navbar.Collapse id="basic-navbar-nav d-flex" className={`justify-content-center navbar-collapse ${menuOpen ? 'show' : ''}`}>
-          <Nav className="ml-auto d-flex justify-content-center" onClick={closeMenu}>
+        <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-center navbar-collapse ${menuOpen ? 'show' : ''}`}>
+          <Nav className="ml-auto d-flex justify-content-center navlinkcontinerformobile" onClick={closeMenu}>
             <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
               Buy / Sell
             </Nav.Link>
@@ -55,19 +49,33 @@ const NavbarComponent = () => {
           </Nav>
         </Navbar.Collapse>
 
-        <Nav className="ml-auto d-flex flex-row justify-content-sm-around buttoncontainer">
+        <Nav className="d-flex flex-row justify-content-sm-around buttoncontainer">
           <Nav.Link className="nav_Link" as={HashLink} smooth to="#about">
             <ButtonCom name="Sign In" bgcolor="none" border="1px solid"></ButtonCom>
           </Nav.Link>
-          <Nav.Link className="nav_Link " as={HashLink} smooth to="#about">
+          <Nav.Link className="nav_Link" as={HashLink} smooth to="#about">
             <ButtonCom name="Sign Up" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none"></ButtonCom>
           </Nav.Link>
         </Nav>
+
+        {/* Toggle icon (TfiAlignJustify) */}
+        <div className="toggle-icon">
+          <TfiAlignJustify
+            onClick={toggleMenu}
+            style={{
+              color: "white",
+              fontSize: "40px",
+              cursor: "pointer",
+              marginTop: "15px",
+              marginRight: "20px",
+              display: "block",  // Show by default
+            }}
+          />
+        </div>
       </Navbar>
 
       {/* Content sections */}
-      <div
-      >
+      <div>
         <div id="home">
           <Home />
         </div>
@@ -84,7 +92,7 @@ const NavbarComponent = () => {
           <Buyandsell />
         </div>
         <Investing></Investing>
-        <ReceiveTransmission/>
+        <ReceiveTransmission />
       </div>
     </>
   );

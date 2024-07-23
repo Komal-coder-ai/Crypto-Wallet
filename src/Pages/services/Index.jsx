@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Service = () => {
   return (
-    <Container fluid className="d-flex justify-content-center align-items-center">
+    <Container fluid className="d-flex justify-content-center align-items-center container">
       <Row>
         <Col xs={12} sm={6} md={6} lg={6} xl={6}  className="d-flex ForMobile">
           <img src={servicelogo} alt="" className="img-fluid ForMobile" />
