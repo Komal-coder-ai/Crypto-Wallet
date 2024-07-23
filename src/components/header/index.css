@@ -37,7 +37,7 @@
 
 @media (min-width: 992px) {
   .navbar-toggler {
-    display: none; 
+    display: none; /* Hide toggler button on larger screens */
   }
 
   .navbar-collapse {
@@ -66,7 +66,7 @@
 
 @media (max-width: 575.98px) {
   .center_link {
- 
+   
     width: 50vw;
     margin-left: auto;
   }
@@ -80,5 +80,4 @@
     padding: 0;
     margin-right: 20px;
   }
- 
 }

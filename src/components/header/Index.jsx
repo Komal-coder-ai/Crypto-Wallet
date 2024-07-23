@@ -30,7 +30,7 @@ const NavbarComponent = () => {
       <Navbar expand="lg" className="navbar">
 
         <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-center navbar-collapse ${menuOpen ? 'show' : ''}`}>
-          <Nav className="ml-auto d-flex justify-content-center navlinkcontinerformobile" onClick={closeMenu}>
+          <Nav className="ml-auto d-flex justify-content-center navlinkcontinerfor" onClick={closeMenu}>
             <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
               Buy / Sell
             </Nav.Link>
