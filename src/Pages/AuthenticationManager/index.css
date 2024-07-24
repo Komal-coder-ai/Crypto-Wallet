@@ -61,3 +61,12 @@ margin-left: 10px;
     min-height: 50vh;
     }
   }
+
+  @media (min-width: 1400px) {
+    .boxes {
+      padding: 20px;
+      /* backg00round: wheat; */
+      width: 400px;
+    }
+  }
+  
