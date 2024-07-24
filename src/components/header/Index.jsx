@@ -9,10 +9,11 @@ import Service from '../../Pages/services/Index';
 import Buyandsell from '../../Pages/Buyandsell';
 import headerbg from '../../assets/ss/headerbg.png';
 import './index.css';
-import ReceiveTransmission from '../../Pages/Receivetransmissions/Index';
+
 import Investing from '../../Pages/Investing';
 import fullbg from '../../assets/ss/fullbg.png';
 import { TfiAlignJustify } from "react-icons/tfi";
+import ReceiveTransmission from '../../Pages/Receivetransmissions/Index';
 
 const NavbarComponent = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ const NavbarComponent = () => {
       <Navbar expand="lg" className="navbar">
 
         <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-center navbar-collapse ${menuOpen ? 'show' : ''}`}>
-          <Nav className="ml-auto d-flex justify-content-center navlinkcontinerfor" onClick={closeMenu}>
+          <Nav className=" d-flex justify-content-center navlinkcontinerfor" onClick={closeMenu}>
             <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
               Buy / Sell
             </Nav.Link>
@@ -49,7 +50,7 @@ const NavbarComponent = () => {
           </Nav>
         </Navbar.Collapse>
 
-        <Nav className="d-flex flex-row justify-content-sm-around buttoncontainer"
+        <Nav className="d-flex flex-row  buttoncontainer"
         style={{
           marginRight:"50px"
         }}
@@ -97,7 +98,7 @@ const NavbarComponent = () => {
           <Buyandsell />
         </div>
         <Investing></Investing>
-        <ReceiveTransmission />
+       <ReceiveTransmission/>
       </div>
     </>
   );

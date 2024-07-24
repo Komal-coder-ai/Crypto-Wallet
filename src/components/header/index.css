@@ -24,13 +24,16 @@
 .nav-link {
   padding: 1rem 2rem;
   color: var(--white-color);
-  text-align: center; /* Centers the nav links */
+  text-align: center;
+  margin-left: 10px;
+  font-weight: 600;
+  
 }
 
 .nav-link:hover {
   padding: 1rem 2rem;
   color: var(--white-color);
-  text-align: center; /* Centers the nav links */
+  text-align: center; 
 }
 
 .navbar-nav {
@@ -80,6 +83,6 @@
   }
   .nav_Link{
     padding: 0;
-    margin-right: 20px;
+    /* margin-right: 20px; */
   }
 }

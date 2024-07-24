@@ -1,73 +1,53 @@
 .investingcontainer {
-
-
     color: white;
-  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-
-}
-
-.investingcontainer h2 {
+    padding: 100px; /* Default padding */
+  }
+  
+  .investingcontainer h2 {
     font-size: var(--text-50-size);
     font-weight: 900;
-}
-
-.investingcontainer p {
+  }
+  
+  .investingcontainer p {
     font-size: var(--smaller-text-size);
     color: var(--paragraph-color);
-}
-
-/* .img-fluid{
-    box-shadow: 0 0 20px 10px rgba(24, 200, 255, 0.7), 0 0 40px 20px rgba(147, 63, 254, 0.7);
-
-} */
-.investingcontainer {
-
-    padding: 100px;
-
-
-}
-
-@media (min-width: 1200px) {
-    .investingcontainer {
-
-        padding: 100px;
-
-
-    }
-}
-
-@media (max-width: 575.98px) {
-
+  }
+  
+  @media (max-width: 575.98px) {
     .investingcontainer h2 {
-        font-size: 30px;
-    }
-
-    .investingcontainer {
-
-        padding: 20px;
-
-
-    }
-}
-
-@media screen and (min-width: 618px) and (max-width: 677px) {
-    .investingcontainer {
-        padding: 10px;
-        margin: 60px;
+      font-size: 30px; /* Adjust font size for smaller screens */
     }
     
-    .investingcontainer h2 {
-        font-size: 30px;
-    }
-    .PlatFormContainer h2 {
-       
-        font-style: 30px;
+    .investingcontainer {
+      padding: 20px; /* Reduce padding for smaller screens */
     }
   }
-
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .investingcontainer {
+      padding: 50px; /* Adjust padding for medium-sized screens */
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .investingcontainer {
+      padding: 80px; /* Adjust padding for larger medium-sized screens */
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .investingcontainer {
+      padding: 100px; /* Adjust padding for larger screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .investingcontainer {
+      padding: 120px; /* Adjust padding for extra large screens */
+    }
+  }
+  
