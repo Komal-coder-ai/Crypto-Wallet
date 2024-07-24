@@ -7,7 +7,7 @@ const FooterCom = () => {
     return (
         <div className=""
         style={{ background: `url(${footerbg})`,
-      
+      backgroundSize:"cover"
     
     
     }}

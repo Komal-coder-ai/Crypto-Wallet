@@ -1,35 +1,23 @@
 import React from 'react';
-import homebg from '../../assets/ss/homebg.png'
-import './index.css'
+import './index.css';
 import ButtonCom from '../../components/button';
-// import ButtonCom from '../../components/button/index'
+import homebg from '../../assets/ss/homebg.png';
+
 const Home = () => {
-    return (
-        <div className=""
-        >
-
-            <div
-
-                className='HomeContainer'
-                style={{
-
-                    minHeight: '100vh',
-                    position: 'relative',
-                }}
-            >
-                <h1
-                    className='h1 '
-                >We make crypto clear and simple</h1>
-
-
-                <div className="GetStartedBtn"><ButtonCom name="Get Started" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none"
-                    className=""
-                ></ButtonCom></div>
-            </div>
-
-
+  return (
+    <div className="home-container">
+      <div className="HomeContainer">
+        <h1>We make crypto clear and simple</h1>
+        <div className="GetStartedBtn">
+          <ButtonCom
+            name="Get Started"
+            bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)"
+            border="none"
+          />
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Home;
