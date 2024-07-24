@@ -17,16 +17,20 @@ const ReceiveTransmission = () => {
           color: "var(--white-color)"
         }}
       > Privacy policy↗</span></p>
-       <div className="input-container">
+       <div className="input-container"
+       style={{
+        width:"auto"
+       }}
+       >
         <input
           type="email"
           placeholder="Email Address"
           className="email-input"
           style={{
-            width: "100%", // Adjust width as needed
-            borderRadius: "10px", // Rounded corners
-            padding: "10px", // Adjust padding for better appearance
-            paddingRight: "40px" // Space for the icon on the right
+            width: "100%", 
+           
+            padding: "10px",
+            paddingRight: "40px" 
           }}
         />
         <FaArrowRight className="input-icon" />

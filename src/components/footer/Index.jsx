@@ -6,7 +6,12 @@ import { FaArrowRight } from 'react-icons/fa';
 const FooterCom = () => {
     return (
         <div className=""
-        // style={{ background: `url(${footerbg})` }}
+        style={{ background: `url(${footerbg})`,
+        minHeight:"100%"
+    
+    
+    }}
+
         >
 
             <Container>
@@ -17,9 +22,9 @@ const FooterCom = () => {
                         </p><p> Sign up to get the latest in CoinFlip news, discounts, and more.</p>
                         <div className="input-container" style={{
 
-                         
 
-                        }}>
+                            width: "90%",
+                                                }}>
                             <input
                                 type="email"
                                 placeholder="Email Address"
@@ -30,7 +35,7 @@ const FooterCom = () => {
                                     padding: "10px",
                                     paddingRight: "40px"
                                 }}
-                                
+
                             />
                             <FaArrowRight className="input-icon" />
                         </div>
