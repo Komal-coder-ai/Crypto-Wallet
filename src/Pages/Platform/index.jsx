@@ -1,8 +1,9 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import ButtonCom from '../../components/button';
 import './index.css'; // Import your custom CSS file
 import platformstar from '../../assets/start/platformstar.svg';
+import { HashLink } from 'react-router-hash-link';
 
 const Platform = () => {
   return (
@@ -13,8 +14,9 @@ const Platform = () => {
             <h2 className='mb-4'>A crypto mining platform that invests in you</h2>
             <p className='mb-4' style={{ width: "70%", margin: "auto" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor   </p>
+            <Nav.Link className="nav_Link" as={HashLink} smooth to="#getstarted">
             <ButtonCom name="Get Started" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none" />
-
+            </Nav.Link>
             <img src={platformstar} alt="Platform Star" className='platformstar img-fluid mt-4' />
           </Col>
         </Row>

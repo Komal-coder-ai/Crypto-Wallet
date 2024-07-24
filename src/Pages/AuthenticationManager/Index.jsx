@@ -21,7 +21,8 @@ const AuthenticationManager = () => {
             <img src={create} alt="" />
             <h3 className="mt-2">Create</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor</p>
-            <a href="#learn-more">Get Started <span className='mx-2'><FaArrowRight /></span></a>
+
+            <a href="#getstarted">Get Started <span className='mx-2'><FaArrowRight /></span></a>
           </div>
         </Col>
 
@@ -31,7 +32,7 @@ const AuthenticationManager = () => {
             <img src={login} alt="" />
             <h3 className="mt-2">Login</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor</p>
-            <a href="#learn-more">Find an ATM <span className='mx-2'><FaArrowRight /></span></a>
+            <a href="#FindanATM ">Find an ATM <span className='mx-2'><FaArrowRight /></span></a>
           </div>
         </Col>
 
@@ -41,7 +42,7 @@ const AuthenticationManager = () => {
             <img src={manage} alt="" />
             <h3 className="mt-2">Manage</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor</p>
-            <a href="#learn-more">Download the App <span className='mx-2'><FaArrowRight /></span></a>
+            <a href="#Download">Download the App <span className='mx-2'><FaArrowRight /></span></a>
           </div>
         </Col>
       </Row>

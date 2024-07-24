@@ -12,9 +12,10 @@ const Investing = () => {
         <Col xs={12} md={6} className="text-content">
           <h2>Take your first step into safe, secure crypto investing</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <ButtonCom name="Get Started" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none" />
-        </Col>
-        
+          <a href="#getstarted">
+            <ButtonCom name="Get Started" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none" />
+          </a>  </Col>
+
         {/* Column for image */}
         <Col xs={12} md={6} className="d-flex justify-content-center">
           <img src={bag} alt="Bag Icon" className="img-fluid" />

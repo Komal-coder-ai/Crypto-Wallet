@@ -32,19 +32,19 @@ const NavbarComponent = () => {
 
         <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-center navbar-collapse ${menuOpen ? 'show' : ''}`}>
           <Nav className=" d-flex justify-content-center navlinkcontinerfor" onClick={closeMenu}>
-            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
+            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#BuySell">
               Buy / Sell
             </Nav.Link>
-            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
+            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#Grow">
               Grow
             </Nav.Link>
-            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
+            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#Markets">
               Markets
             </Nav.Link>
-            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
+            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#Business">
               Business
             </Nav.Link>
-            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#">
+            <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#Support">
               Support
             </Nav.Link>
           </Nav>
@@ -56,10 +56,10 @@ const NavbarComponent = () => {
         }}
 
         >
-          <Nav.Link className="nav_Link" as={HashLink} smooth to="#about">
+          <Nav.Link className="nav_Link" as={HashLink} smooth to="#SignIn">
             <ButtonCom name="Sign In" bgcolor="none" border="1px solid"></ButtonCom>
           </Nav.Link>
-          <Nav.Link className="nav_Link" as={HashLink} smooth to="#about">
+          <Nav.Link className="nav_Link" as={HashLink} smooth to="#Signup">
             <ButtonCom name="Sign Up" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none"></ButtonCom>
           </Nav.Link>
         </Nav>
@@ -94,11 +94,13 @@ const NavbarComponent = () => {
         <div id="service">
           <Service />
         </div>
-        <div id="buyandsell">
+        <div id="BuySell">
           <Buyandsell />
         </div>
         <Investing></Investing>
+        <div className="" id='Support'>
        <ReceiveTransmission/>
+       </div>
       </div>
     </>
   );

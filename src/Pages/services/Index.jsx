@@ -2,7 +2,8 @@ import React from 'react';
 import './index.css';
 import servicelogo from '../../assets/icon/servicelogo.svg';
 import ButtonCom from '../../components/button';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 
 const Service = () => {
   return (
@@ -17,7 +18,9 @@ const Service = () => {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+            <a  href="#getstarted">
             <ButtonCom name="Get Started" bgcolor="none" border="1px solid" />
+            </a>
           </div>
         </Col>
       </Row>
