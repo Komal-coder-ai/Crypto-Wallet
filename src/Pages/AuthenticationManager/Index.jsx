@@ -16,7 +16,7 @@ const AuthenticationManager = () => {
     >
       <Row className="justify-content-evenly container mt-5">
         {/* Column 1 */}
-        <Col xs={12} sm={10} md={8} lg={3} className="mb-3 boxes">
+        <Col xs={12} sm={10} md={8}  className="mb-3 boxes">
           <div className="text-center">
             <img src={create} alt="" />
             <h3 className="mt-2">Create</h3>
@@ -26,7 +26,7 @@ const AuthenticationManager = () => {
         </Col>
 
         {/* Column 2 */}
-        <Col xs={12} sm={10} md={8} lg={3} className="mb-3 boxes ">
+        <Col xs={12} sm={10} md={8}  className="mb-3 boxes ">
           <div className="text-center">
             <img src={login} alt="" />
             <h3 className="mt-2">Login</h3>
@@ -36,7 +36,7 @@ const AuthenticationManager = () => {
         </Col>
 
         {/* Column 3 */}
-        <Col xs={12} sm={10} md={8} lg={3} className="mb-3 boxes">
+        <Col xs={12} sm={10} md={8}  className="mb-3 boxes">
           <div className="text-center">
             <img src={manage} alt="" />
             <h3 className="mt-2">Manage</h3>
