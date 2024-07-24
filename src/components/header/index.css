@@ -34,7 +34,7 @@
 }
 
 .nav-link:hover {
-  padding: 1rem 2rem;
+ 
   color: var(--white-color);
   text-align: center;
 }

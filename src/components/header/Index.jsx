@@ -56,12 +56,12 @@ const NavbarComponent = () => {
         }}
 
         >
-          <a className="nav_Link" href="#SignIn">
+          <Nav.Link className="nav_Link" as={HashLink} smooth to="#SignIn">
             <ButtonCom name="Sign In" bgcolor="none" border="1px solid"></ButtonCom>
-          </a>
-          <a className="nav_Link mx-2" href="#SignIn" >
-          <ButtonCom name="Sign Up " bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none"></ButtonCom>
-          </a>
+          </Nav.Link>
+          <Nav.Link className="nav_Link" as={HashLink} smooth to="#Signup">
+            <ButtonCom name="Sign Up" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none"></ButtonCom>
+          </Nav.Link>
         </Nav>
 
         {/* Toggle icon (TfiAlignJustify) */}
