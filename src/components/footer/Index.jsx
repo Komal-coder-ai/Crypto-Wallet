@@ -6,47 +6,52 @@ import { FaArrowRight } from 'react-icons/fa';
 const FooterCom = () => {
     return (
         <div className=""
-   
+        // style={{ background: `url(${footerbg})` }}
         >
-            
+
             <Container>
                 <Row className='footer-container'>
                     <Col xs={12} md={6} lg={4} className='EmailCon'>
                         <p>
-                            CoinFlip, the world’s leading bitcoin ATM operator, makes it so flippin’ easy to buy and sell bitcoin via cash, card, or bank transfer. Sign up to get the latest in CoinFlip news, discounts, and more.
-                        </p>
-                        <div className="input-container">
-        <input
-          type="email"
-          placeholder="Email Address"
-          className="email-input"
-          style={{
-            width: "100%", // Adjust width as needed
-            borderRadius: "10px", // Rounded corners
-            padding: "10px", // Adjust padding for better appearance
-            paddingRight: "40px" // Space for the icon on the right
-          }}
-        />
-        <FaArrowRight className="input-icon" />
-      </div>
+                            CoinFlip, the world’s leading bitcoin ATM operator, makes it so flippin’ easy to buy and sell bitcoin via cash, card, or bank transfer.
+                        </p><p> Sign up to get the latest in CoinFlip news, discounts, and more.</p>
+                        <div className="input-container" style={{
+
+                         
+
+                        }}>
+                            <input
+                                type="email"
+                                placeholder="Email Address"
+                                className="email-input"
+                                style={{
+                                    width: "100%",
+                                    // borderRadius: "10px",
+                                    padding: "10px",
+                                    paddingRight: "40px"
+                                }}
+                                
+                            />
+                            <FaArrowRight className="input-icon" />
+                        </div>
 
                         <p className='mt-4'>© 2021 GPD Holdings, LLC FinCEN MSB</p>
                     </Col>
 
                     <Col xs={6} md={3} lg={2} className='menucon'>
 
-                        <ListGroup.Item action className='list'
+                        <ListGroup.Item action className='list '
                         >Company</ListGroup.Item>
-                        <ListGroup.Item action className='list'
+                        <ListGroup.Item action className='list mt-3'
                         >About</ListGroup.Item>
-                        <ListGroup.Item action className='list'
+                        <ListGroup.Item action className='list mt-3'
                         >Careers</ListGroup.Item>
-                        <ListGroup.Item action className='list'
+                        <ListGroup.Item action className='list mt-3'
                         >Press</ListGroup.Item>
-                       
-                        <ListGroup.Item action className='list'
+
+                        <ListGroup.Item action className='list mt-3'
                         >News</ListGroup.Item>
-                        <ListGroup.Item action className='list'
+                        <ListGroup.Item action className='list mt-3'
                         >Merch</ListGroup.Item>
 
                     </Col>

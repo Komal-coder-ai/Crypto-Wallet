@@ -28,7 +28,9 @@
 }
 
 .nav-link:hover {
-  color: var(--primary-color);
+  padding: 1rem 2rem;
+  color: var(--white-color);
+  text-align: center; /* Centers the nav links */
 }
 
 .navbar-nav {

@@ -15,7 +15,7 @@
   outline: none;
   transition: box-shadow 0.3s ease;
   background: none;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   color: white;
   /* Text color for input */
 
@@ -56,6 +56,6 @@
   .footer-container {
     padding: 20px;
     padding-top: 40px;
-   
+
   }
 }
