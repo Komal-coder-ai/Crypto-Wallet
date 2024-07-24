@@ -11,9 +11,8 @@ const Platform = () => {
         <Row className='justify-content-center align-items-center'>
           <Col xs={12} md={7} lg={7} className='text-center'>
             <h2 className='mb-4'>A crypto mining platform that invests in you</h2>
-            <p className='mb-4' style={{ width: "80%", margin: "auto" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <p className='mb-4' style={{ width: "70%", margin: "auto" }}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor   </p>
             <ButtonCom name="Get Started" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none" />
 
             <img src={platformstar} alt="Platform Star" className='platformstar img-fluid mt-4' />

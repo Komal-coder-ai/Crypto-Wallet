@@ -28,33 +28,16 @@
   font-size: var(--smaller-text-size);
 }
 
-.TableContainer {
-  width: 100%;
- 
- 
- 
-
-}
-
-.TableRow {
-
- 
-  /* border-top: 1px solid #2B2C3B; */
-}
-
-
 
 .TableLink {
   color: var(--white-color);
   text-decoration: none;
 }
 
-.TableArrow {
-  margin-left: 5px;
-}
+
 
 .TableContainer .table_data {
-  /* padding: 20px 32px 20px 32px; */
+
   background: none;
   color: white;
   border: none;
@@ -150,6 +133,7 @@
   background-color: var(--bg-black);
   border-top: 1px solid #2B2C3B;
   border-bottom: 1px solid #2B2C3B;
+  
 }
 
 .TableLink {

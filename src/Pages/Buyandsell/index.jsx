@@ -12,10 +12,13 @@ const Buyandsell = () => {
         <Row className='justify-content-center align-items-center'>
           <Col xs={12} md={8} lg={7} className='text-center mb-4 ButAndselltext'>
             <h2>Buy and sell with the lowest fees in the industry</h2>
-            <p className="mb-3">
+            <p className="mb-3 ">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <a href="#learn-more" className="TableLink">
+            <a href="#learn-more" className="TableLink"
+            style={{
+              color:"var(--link-color)"
+            }}>
               Learn More
               <span className='TableArrow'>
                 <FaArrowRight />
