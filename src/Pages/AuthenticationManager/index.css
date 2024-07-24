@@ -57,12 +57,7 @@ margin-left: 10px;
     .Authenticationcontainer {
        padding: 20px;
     }
-   
-  }
-  @media (max-width: 1400px) {
-    .boxes {
-      padding: 20px;
-      width: 400px;
+    .HomeContainer{
+    min-height: 50vh;
     }
   }
-  
