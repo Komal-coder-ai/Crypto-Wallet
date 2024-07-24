@@ -26,7 +26,7 @@ const AuthenticationManager = () => {
         </Col>
 
         {/* Column 2 */}
-        <Col xs={12} sm={8} md={8} lg={3} className="mb-3 boxes ">
+        <Col xs={12} sm={10} md={8} lg={3} className="mb-3 boxes ">
           <div className="text-center">
             <img src={login} alt="" />
             <h3 className="mt-2">Login</h3>
