@@ -1,7 +1,7 @@
 *{
   margin: 0px;
   padding: 0px;
-  border: 1px solid red ;
+  /* border: 1px solid red ; */
 }
 :root {
     --primary-button-color: #18C8FF;
