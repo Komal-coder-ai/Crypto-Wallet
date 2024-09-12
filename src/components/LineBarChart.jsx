@@ -1,43 +1,61 @@
-import React from 'react';
-import { Line } from 'react-chartjs-2';
-import { Chart as ChartJS } from 'chart.js';
-import 'chartjs-adapter-date-fns'; // Optional: Import if using date-fns for date handling
-import { CategoryScale } from 'chart.js';
+import * as React from 'react';
+import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
+import { SparkLineChart } from '@mui/x-charts/SparkLineChart';
 
-// Register the category scale globally
-ChartJS.register(CategoryScale);
-const SimpleLineChart = () => {
-  const data = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-    datasets: [
-      {
-        label: 'Sales',
-        data: [65, 59, 80, 81, 56, 55],
-        fill: false,
-        borderColor: 'rgb(75, 192, 192)',
-        tension: 0.1
-      }
-    ]
+export default function BasicSparkLineCustomization() {
+  const [showHighlight, setShowHighlight] = React.useState(true);
+  const [showTooltip, setShowTooltip] = React.useState(true);
+
+  const handleHighlightChange = (event) => {
+    setShowHighlight(event.target.checked);
   };
 
-  const options = {
-    scales: {
-      x: {
-        type: 'category', // Ensure type is 'category' for categorical data
-        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
-      },
-      y: {
-        beginAtZero: true,
-      }
-    }
+  const handleTooltipChange = (event) => {
+    setShowTooltip(event.target.checked);
   };
 
   return (
-    <div>
-      <h2>Simple Line Chart</h2>
-      <Line data={data} options={options} />
-    </div>
+    <Stack direction="column" sx={{ width: '100%', height: '10px' }}>
+      {/* <Stack direction="row">
+        <FormControlLabel
+          value="end"
+          control={
+            <Switch
+              color="primary"
+              checked={showHighlight}
+              onChange={handleHighlightChange}
+            />
+          }
+          label="showHighlight"
+          labelPlacement="end"
+        />
+        <FormControlLabel
+          value="end"
+          control={
+            <Switch
+              color="primary"
+              checked={showTooltip}
+              onChange={handleTooltipChange}
+            />
+          }
+          label="showTooltip"
+          labelPlacement="end"
+        />
+      </Stack> */}
+      <Stack direction="row" sx={{ width: '100%' , height: '10px' }}>
+        <Box sx={{ flexGrow: 1 }}>
+          <SparkLineChart
+            data={[1, 4, 2, 5, 7, 2, 4, 6]}
+            height={30}
+            showHighlight={showHighlight}
+            showTooltip={showTooltip}
+          />
+        </Box>
+       
+      </Stack>
+    </Stack>
   );
-};
-
-export default SimpleLineChart;
+}

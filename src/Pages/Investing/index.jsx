@@ -10,8 +10,9 @@ const Investing = () => {
       <Row className="align-items-center container">
         {/* Column for text content */}
         <Col xs={12} md={6} className="text-content">
-          <h2>Take your first step into safe, secure crypto investing</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h2>Start Your Journey with Safe and Secure Crypto Investing</h2>
+          <p>
+          Begin your investment with confidence, knowing that our platform offers robust security and reliable solutions for a smooth and protected experience.  </p>
           <a href="#getstarted">
             <ButtonCom name="Get Started" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none" />
           </a>  </Col>

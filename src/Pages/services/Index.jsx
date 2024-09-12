@@ -14,10 +14,12 @@ const Service = () => {
         </Col>
         <Col xs={10} sm={5} md={5} lg={6} xl={5} className="d-flex ServiceContainer flex-column justify-content-center align-items-center service-content">
           <div className="text-container ">
-            <h1>24/7 access to full service customer support</h1>
+            <h1>
+              
+            24/7 Access to Comprehensive Customer Support
+              </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            Experience round-the-clock assistance from our dedicated team, ready to help you with any inquiries or issues to ensure your seamless experience  </p>
             <a  href="#getstarted">
             <ButtonCom name="Get Started" bgcolor="none" border="1px solid" />
             </a>

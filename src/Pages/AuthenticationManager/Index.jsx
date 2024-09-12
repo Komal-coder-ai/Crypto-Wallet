@@ -20,7 +20,9 @@ const AuthenticationManager = () => {
           <div className="text-center">
             <img src={create} alt="" />
             <h3 className="mt-2">Create</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor</p>
+            <p>
+            Design and set up your personalized crypto wallet with our intuitive tools, tailored to meet your unique needs and preferences.
+            </p>
 
             <a href="#getstarted">Get Started <span className='mx-2'><FaArrowRight /></span></a>
           </div>
@@ -31,7 +33,8 @@ const AuthenticationManager = () => {
           <div className="text-center">
             <img src={login} alt="" />
             <h3 className="mt-2">Login</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor</p>
+            <p>
+            Log in safely to manage and monitor your digital assets with confidence, using our robust and secure authentication system</p>
             <a href="#FindanATM ">Find an ATM <span className='mx-2'><FaArrowRight /></span></a>
           </div>
         </Col>
@@ -41,7 +44,9 @@ const AuthenticationManager = () => {
           <div className="text-center">
             <img src={manage} alt="" />
             <h3 className="mt-2">Manage</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor</p>
+            <p>
+            Take control of your digital assets with powerful management tools that simplify tracking, organizing, and optimizing your investments
+              </p>
             <a href="#Download">Download the App <span className='mx-2'><FaArrowRight /></span></a>
           </div>
         </Col>

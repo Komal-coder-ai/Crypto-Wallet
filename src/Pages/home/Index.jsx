@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="HomeContainer">
-        <h1>We make crypto clear and simple</h1>
+        <h1>Your Gateway to Secure and Simple Crypto Management</h1>
         <div className="GetStartedBtn">
         <Nav.Link className="nav_Link" as={HashLink} smooth to="#getstarted">
           <ButtonCom

@@ -5,9 +5,9 @@ import { FaArrowRight } from 'react-icons/fa';
 const ReceiveTransmission = () => {
   return (
     <div className='ReceiveTransmission'>
-      <h2>Receive transmissions</h2>
+      <h2>Receive Essential Updates Promptly</h2>
       <p>
-        Unsubscribe at any time.
+      Cancel Your Subscription Whenever You Wish.
         <span style={{ color: "var(--white-color)" }}> Privacy policy↗</span>
       </p>
       <div className="input-container">

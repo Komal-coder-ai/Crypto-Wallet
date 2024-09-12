@@ -18,8 +18,8 @@ const FooterCom = () => {
                 <Row className='footer-container'>
                     <Col xs={12} md={6} lg={4} className='EmailCon'>
                         <p>
-                            CoinFlip, the world’s leading bitcoin ATM operator, makes it so flippin’ easy to buy and sell bitcoin via cash, card, or bank transfer.
-                        </p><p> Sign up to get the latest in CoinFlip news, discounts, and more.</p>
+                            CoinFlip: The Top Bitcoin ATM Operator, Making Buying and Selling Bitcoin Effortless with Cash, Card, or Bank Transfer.
+                        </p><p> Subscribe for the Latest CoinFlip News, Exclusive Discounts, and More Updates.</p>
                         <div className="input-container" style={{
 
 

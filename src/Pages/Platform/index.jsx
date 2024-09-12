@@ -11,9 +11,11 @@ const Platform = () => {
       <Container fluid>
         <Row className='justify-content-center align-items-center'>
           <Col xs={12} md={7} lg={7} className='text-center'>
-            <h2 className='mb-4'>A crypto mining platform that invests in you</h2>
+            <h2 className='mb-4'>
+            Empowering Your Crypto Journey with Strategic Mining Investments</h2>
             <p className='mb-4' style={{ width: "70%", margin: "auto" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor   </p>
+            Unlock your potential with our tailored mining solutions, designed to maximize your gains and support your growth in the crypto world.
+              </p>
             <Nav.Link className="nav_Link" as={HashLink} smooth to="#getstarted">
             <ButtonCom name="Get Started" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none" />
             </Nav.Link>
