@@ -40,7 +40,7 @@ const FooterCom = () => {
                             <FaArrowRight className="input-icon" />
                         </div>
 
-                        <p className='mt-4'>© 2021 GPD Holdings, LLC FinCEN MSB</p>
+                        {/* <p className='mt-4'>© 2021 GPD Holdings, LLC FinCEN MSB</p> */}
                     </Col>
 
                     <Col xs={6} md={3} lg={2} className='menucon'>
