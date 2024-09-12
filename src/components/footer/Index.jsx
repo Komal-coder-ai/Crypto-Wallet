@@ -16,7 +16,11 @@ const FooterCom = () => {
 
             <Container>
                 <Row className='footer-container'>
-                    <Col xs={12} md={6} lg={4} className='EmailCon'>
+                    <Col xs={12} md={6} lg={4} className='EmailCon' 
+                    style={{
+                        marginBottom: "15px"
+                    }}
+                    >
                         <p>
                             CoinFlip: The Top Bitcoin ATM Operator, Making Buying and Selling Bitcoin Effortless with Cash, Card, or Bank Transfer.
                         </p><p> Subscribe for the Latest CoinFlip News, Exclusive Discounts, and More Updates.</p>
