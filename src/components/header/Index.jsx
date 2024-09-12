@@ -30,7 +30,10 @@ const NavbarComponent = () => {
     <>
       <Navbar expand="lg" className="navbar">
 
-        <Navbar.Brand href="/" className="d-flex align-items-center mix-blend-multiply" style={{ marginLeft: "50px" }}>
+        <Navbar.Brand href="/" className="d-flex 
+        align-items-center mix-blend-multiply 
+        justify-content-center
+        " style={{ marginLeft: "50px" }}>
           <img
             src={logo}
             alt="Logo"
