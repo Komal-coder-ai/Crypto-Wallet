@@ -10,7 +10,7 @@ const Buyandsell = () => {
     <div className='BuyAndsellContainer'>
       <Container>
         <Row className='justify-content-center align-items-center'>
-          <Col xs={12} md={8} lg={7} className='text-center mb-4 ButAndselltext'>
+          <Col xs={12} md={8} lg={8} className='text-center mb-4 ButAndselltext'>
             <h2>Enjoy the lowest fees in the market for buying and selling.</h2>
             <p className="mb-3 ">
             Trading made simple and affordable, with the lowest fees ensuring you keep more of what you earn.  </p>
