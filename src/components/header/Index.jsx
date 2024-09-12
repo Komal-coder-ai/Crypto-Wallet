@@ -9,7 +9,7 @@ import Service from '../../Pages/services/Index';
 import Buyandsell from '../../Pages/Buyandsell';
 import headerbg from '../../assets/ss/headerbg.png';
 import './index.css';
-
+import logo from '../../assets/logo3.png';
 import Investing from '../../Pages/Investing';
 import fullbg from '../../assets/ss/fullbg.png';
 import { TfiAlignJustify } from "react-icons/tfi";
@@ -30,6 +30,20 @@ const NavbarComponent = () => {
     <>
       <Navbar expand="lg" className="navbar">
 
+        <Navbar.Brand href="/" className="d-flex align-items-center mix-blend-multiply" style={{ marginLeft: "50px" }}>
+          <img
+            src={logo}
+            alt="Logo"
+            style={{
+              width: '100px', height: 'auto',
+
+              // mixBlendMode: 'multiply',
+
+            }} // Adjust the size as needed
+          />
+
+
+        </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav" className={`justify-content-center navbar-collapse ${menuOpen ? 'show' : ''}`}>
           <Nav className=" d-flex justify-content-center navlinkcontinerfor" onClick={closeMenu}>
             <Nav.Link className="nav_Link center_link" as={HashLink} smooth to="#BuySell">
@@ -51,9 +65,9 @@ const NavbarComponent = () => {
         </Navbar.Collapse>
 
         <Nav className="d-flex flex-row  buttoncontainer"
-        style={{
-          marginRight:"50px"
-        }}
+          style={{
+            marginRight: "50px"
+          }}
 
         >
           <Nav.Link className="nav_Link" as={HashLink} smooth to="#SignIn">
@@ -74,13 +88,13 @@ const NavbarComponent = () => {
               cursor: "pointer",
               marginTop: "15px",
               marginRight: "20px",
-              display: "block",  // Show by default
+              display: "block",
             }}
           />
         </div>
       </Navbar>
 
-      {/* Content sections */}
+
       <div>
         <div id="home">
           <Home />
@@ -99,8 +113,8 @@ const NavbarComponent = () => {
         </div>
         <Investing></Investing>
         <div className="" id='Support'>
-       <ReceiveTransmission/>
-       </div>
+          {/* <ReceiveTransmission/> */}
+        </div>
       </div>
     </>
   );

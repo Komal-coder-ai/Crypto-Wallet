@@ -16,7 +16,7 @@ const Platform = () => {
             <p className='mb-4' style={{ width: "70%", margin: "auto" }}>
             Unlock your potential with our tailored mining solutions, designed to maximize your gains and support your growth in the crypto world.
               </p>
-            <Nav.Link className="nav_Link" as={HashLink} smooth to="#getstarted">
+            <Nav.Link className="nav_Link" as={HashLink} smooth>
             <ButtonCom name="Get Started" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none" />
             </Nav.Link>
             <img src={platformstar} alt="Platform Star" className='platformstar img-fluid mt-4' />

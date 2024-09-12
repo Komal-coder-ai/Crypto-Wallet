@@ -24,7 +24,7 @@ const AuthenticationManager = () => {
             Design and set up your personalized crypto wallet with our intuitive tools, tailored to meet your unique needs and preferences.
             </p>
 
-            <a href="#getstarted">Get Started <span className='mx-2'><FaArrowRight /></span></a>
+            <a >Get Started <span className='mx-2'><FaArrowRight /></span></a>
           </div>
         </Col>
 

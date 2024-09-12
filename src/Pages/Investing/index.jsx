@@ -13,7 +13,7 @@ const Investing = () => {
           <h2>Start Your Journey with Safe and Secure Crypto Investing</h2>
           <p>
           Begin your investment with confidence, knowing that our platform offers robust security and reliable solutions for a smooth and protected experience.  </p>
-          <a href="#getstarted">
+          <a >
             <ButtonCom name="Get Started" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none" />
           </a>  </Col>
 

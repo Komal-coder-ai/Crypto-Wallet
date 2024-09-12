@@ -20,7 +20,7 @@ const Service = () => {
               </h1>
             <p>
             Experience round-the-clock assistance from our dedicated team, ready to help you with any inquiries or issues to ensure your seamless experience  </p>
-            <a  href="#getstarted">
+            <a >
             <ButtonCom name="Get Started" bgcolor="none" border="1px solid" />
             </a>
           </div>

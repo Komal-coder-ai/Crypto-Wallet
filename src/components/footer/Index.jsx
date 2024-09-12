@@ -15,8 +15,8 @@ const FooterCom = () => {
         >
 
             <Container>
-                <Row className='footer-container'>
-                    <Col xs={12} md={6} lg={4} className='EmailCon' 
+                <Row className='footer-container justify-content-lg-start'>
+                    {/* <Col xs={12} md={6} lg={4} className='EmailCon' 
                     style={{
                         marginBottom: "15px"
                     }}
@@ -35,7 +35,7 @@ const FooterCom = () => {
                                 className="email-input"
                                 style={{
                                     width: "100%",
-                                    // borderRadius: "10px",
+                                    
                                     padding: "10px",
                                     paddingRight: "40px"
                                 }}
@@ -44,8 +44,7 @@ const FooterCom = () => {
                             <FaArrowRight className="input-icon" />
                         </div>
 
-                        {/* <p className='mt-4'>© 2021 GPD Holdings, LLC FinCEN MSB</p> */}
-                    </Col>
+                         </Col> */}
 
                     <Col xs={6} md={3} lg={2} className='menucon'>
 
