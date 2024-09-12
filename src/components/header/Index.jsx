@@ -9,7 +9,7 @@ import Service from '../../Pages/services/Index';
 import Buyandsell from '../../Pages/Buyandsell';
 import headerbg from '../../assets/ss/headerbg.png';
 import './index.css';
-import logo from '../../assets/logo3.png';
+import logo from '../../assets/logo4.png';
 import Investing from '../../Pages/Investing';
 import fullbg from '../../assets/ss/fullbg.png';
 import { TfiAlignJustify } from "react-icons/tfi";
