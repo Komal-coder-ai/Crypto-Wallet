@@ -9,14 +9,18 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="HomeContainer">
-        <h1>Your Gateway to Secure and Simple Crypto Management</h1>
+        <h1
+
+        >
+          Your Gateway to Secure and Simple Crypto Management
+          </h1>
         <div className="GetStartedBtn">
-        <Nav.Link className="nav_Link" as={HashLink} smooth >
-          <ButtonCom
-            name="Get Started"
-            bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)"
-            border="none"
-          />
+          <Nav.Link className="nav_Link" as={HashLink} smooth >
+            <ButtonCom
+              name="Get Started"
+              bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)"
+              border="none"
+            />
           </Nav.Link>
         </div>
       </div>

@@ -9,8 +9,10 @@ const ButtonCom = ({ name, bgcolor, border }) => {
     padding: '10px 20px',
     cursor: 'pointer',
     fontSize: '16px',
+    
     boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
     fontWeight: '600',
+marginRight:"5px"
   };
 
   const handleClick = () => {
