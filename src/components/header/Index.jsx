@@ -12,7 +12,7 @@ import Buyandsell from '../../Pages/Buyandsell';
 import Home from '../../Pages/home/Index';
 import ButtonCom from '../button';
 import { Nav } from 'react-bootstrap';
-import { MarginRounded } from '@mui/icons-material';
+
 const NavbarComponent = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 

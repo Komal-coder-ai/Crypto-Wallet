@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import ButtonCom from '../../components/button';
-import './index.css'; // Import your custom CSS file
+
 import platformstar from '../../assets/start/platformstar.svg';
 import { HashLink } from 'react-router-hash-link';
 import { Box, Typography } from '@mui/material';
