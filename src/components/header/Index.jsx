@@ -24,7 +24,7 @@ const NavbarComponent = () => {
   };
 
   const menuItems = [
-    { label: 'Buy / Sell', to: '#BuySell' },
+    { label: 'Buy/Sell', to: '#BuySell' },
     { label: 'Grow', to: '#Grow' },
     { label: 'Markets', to: '#Markets' },
     { label: 'Business', to: '#Business' },
@@ -33,59 +33,52 @@ const NavbarComponent = () => {
 
   return (
     <>
-      <AppBar position="static" className="navbar" sx={{ background: 'none' }}>
-        <Toolbar>
-          <Grid container alignItems="center" justifyContent="space-between" sx={{ width: '90vw' }}>
-            {/* Logo Section */}
-            <Grid item xs={6} sm={4} md={2} container justifyContent="flex-start">
-              <IconButton edge="start" color="inherit" aria-label="logo" href="/" sx={{ padding: 0 }}>
-                <img src={logo} alt="Logo" style={{ width: '100px', height: 'auto' }} />
-              </IconButton>
-            </Grid>
+ <AppBar position="static" className="navbar" sx={{ background: 'none', boxShadow: 'none' }}>
+  <Toolbar sx={{ width: '90vw', mx: 'auto' }}>
+    <Grid container alignItems="center" justifyContent="space-between">
+      
+      {/* Logo and Menu Icon Section for Mobile */}
+      <Grid item xs={12} sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'space-between', alignItems: 'center' }}>
+        <IconButton edge="start" color="inherit" aria-label="logo" href="/" sx={{ padding: 0 }}>
+          <img src={logo} alt="Logo" style={{ width: '80px', height: 'auto' }} />
+        </IconButton>
+        <IconButton edge="end" color="inherit" aria-label="menu" onClick={toggleDrawer(true)} sx={{ padding: 0 }}>
+          <MenuIcon />
+        </IconButton>
+      </Grid>
 
-            {/* Menu Links Section */}
-            <Grid item xs={6} sm={8} md={6} className="d-flex justify-content-center">
-              <List className="navlink-container" sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'space-evenly', width: '100%' }}>
-                {menuItems.map((item, index) => (
-                  <ListItem key={index} button component={HashLink} smooth to={item.to} className="nav_Link center_link">
-                    <ListItemText primary={item.label} />
-                  </ListItem>
-                ))}
-              </List>
-            </Grid>
+      {/* Logo Section for Desktop */}
+      <Grid item md={2} sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-start' }}>
+        <IconButton edge="start" color="inherit" aria-label="logo" href="/" sx={{ padding: 0 }}>
+          <img src={logo} alt="Logo" style={{ width: '100px', height: 'auto' }} />
+        </IconButton>
+      </Grid>
 
-            {/* Buttons Section */}
-            <Grid item xs={6} sm={4} md={4}  container justifyContent="flex-end">
-              <Grid item sx={{ display: { xs: 'none', md: 'flex' } }}>
-                <Nav.Link className="nav_Link" as={HashLink} smooth to="#SignIn">
-                  <ButtonCom
-                    name="Sign In"
-                    bgcolor="none"
-                    border="1px solid"
-                  />
-                </Nav.Link>
-                <Nav.Link className="nav_Link" as={HashLink} smooth to="#Signup" >
-                  <ButtonCom
-                    name="Sign Up"
-                    bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)"
-                    border="none"
-                
-                  />
-                </Nav.Link>
-              </Grid>
+      {/* Menu Links Section for Desktop */}
+      <Grid item md={6} className="d-flex justify-content-center">
+        <List className="navlink-container" sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'space-evenly', width: '100%' }}>
+          {menuItems.map((item, index) => (
+            <ListItem key={index} button component={HashLink} smooth to={item.to} className="nav_Link center_link">
+              <ListItemText primary={item.label} />
+            </ListItem>
+          ))}
+        </List>
+      </Grid>
 
+      {/* Buttons Section for Desktop */}
+      <Grid item md={4} container justifyContent="flex-end" sx={{ display: { xs: 'none', md: 'flex' } }}>
+        <Nav.Link className="nav_Link" as={HashLink} smooth to="#SignIn">
+          <ButtonCom name="Sign In" bgcolor="none" border="1px solid" />
+        </Nav.Link>
+        <Nav.Link className="nav_Link" as={HashLink} smooth to="#Signup">
+          <ButtonCom name="Sign Up" bgcolor="linear-gradient(190deg, #18C8FF, #933FFE)" border="none" />
+        </Nav.Link>
+      </Grid>
 
+    </Grid>
+  </Toolbar>
+</AppBar>
 
-            </Grid>
-
-            <Grid item xs={6} sm={4} md={2} container >
-              <IconButton edge="end" color="inherit" aria-label="menu" onClick={toggleDrawer(true)} sx={{ display: { xs: 'block', md: 'none' } }}>
-                <MenuIcon />
-              </IconButton>
-            </Grid>
-          </Grid>
-        </Toolbar>
-      </AppBar>
 
 
       <Drawer anchor="right" open={menuOpen} onClose={toggleDrawer(false)}>
