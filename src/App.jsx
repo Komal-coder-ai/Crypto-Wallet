@@ -12,7 +12,12 @@ import FooterCom from "./components/footer/Index";
 import fullbg from './assets/ss/Full_bg.svg'
 const App = () => {
   return (
-    <div>
+    <div style={{
+      backgroundImage: `url(${fullbg})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundColor:"black", 
+    }}>  
       <Router>
 
         <div className=""

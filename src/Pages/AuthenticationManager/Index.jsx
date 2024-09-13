@@ -23,7 +23,7 @@ const AuthenticationManager = () => {
             <p>
               Design and set up your personalized crypto wallet with our intuitive tools, tailored to meet your unique needs and preferences.
             </p>
-            <a href="https://www.bitpaisaa.com/" target='_blank'>Get Started <span className='mx-2'><FaArrowRight /></span></a>
+            {/* <a href="https://www.bitpaisaa.com/" target='_blank'>Get Started <span className='mx-2'><FaArrowRight /></span></a> */}
          
             </div>
         </Col>
@@ -35,7 +35,7 @@ const AuthenticationManager = () => {
             <h3 className="mt-2">Login</h3>
             <p>
               Log in safely to manage and monitor your digital assets with confidence, using our robust and secure authentication system</p>
-            <a href="#FindanATM ">Find an ATM <span className='mx-2'><FaArrowRight /></span></a>
+            {/* <a href="#FindanATM ">Find an ATM <span className='mx-2'><FaArrowRight /></span></a> */}
           </div>
         </Col>
 
@@ -47,7 +47,7 @@ const AuthenticationManager = () => {
             <p>
               Take control of your digital assets with powerful management tools that simplify tracking, organizing, and optimizing your investments
             </p>
-            <a href="#Download">Download the App <span className='mx-2'><FaArrowRight /></span></a>
+            {/* <a href="#Download">Download the App <span className='mx-2'><FaArrowRight /></span></a> */}
           </div>
         </Col>
       </Row>

@@ -3,14 +3,16 @@ import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 import './index.css';
 import footerbg from '../../assets/ss/bgFooter.png'
 import { FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 const FooterCom = () => {
     return (
         <div className=""
-        style={{ background: `url(${footerbg})`,
-      backgroundSize:"cover"
-    
-    
-    }}
+            style={{
+                background: `url(${footerbg})`,
+                backgroundSize: "cover"
+
+
+            }}
 
         >
 
@@ -47,29 +49,34 @@ const FooterCom = () => {
                          </Col> */}
 
                     <Col xs={6} md={3} lg={2} className='menucon'>
+<h5 style={{fontWeight:'bold'}} className=' mb-4'>Support</h5>
+                        <ListGroup.Item action className='list ' href="https://www.bitpaisaa.com/faq"
+                        >FAQ's</ListGroup.Item>
+                        <ListGroup.Item action className='list mt-3' href="https://www.bitpaisaa.com/contact"
+                        >Contact</ListGroup.Item>
+                        <ListGroup.Item action className='list mt-3' href="https://www.bitpaisaa.com/#"
+                        >Blog</ListGroup.Item>
+                        <ListGroup.Item action className='list mt-3' href="https://www.bitpaisaa.com/#"
+                        >Career</ListGroup.Item>
 
-                        <ListGroup.Item action className='list '
-                        >Company</ListGroup.Item>
-                        <ListGroup.Item action className='list mt-3'
-                        >About</ListGroup.Item>
-                        <ListGroup.Item action className='list mt-3'
-                        >Careers</ListGroup.Item>
-                        <ListGroup.Item action className='list mt-3'
-                        >Press</ListGroup.Item>
-
-                        <ListGroup.Item action className='list mt-3'
+                        {/* <ListGroup.Item action className='list mt-3'
                         >News</ListGroup.Item>
                         <ListGroup.Item action className='list mt-3'
-                        >Merch</ListGroup.Item>
+                        >Merch</ListGroup.Item> */}
 
                     </Col>
 
-                    <Col xs={6} md={3} lg={4} >
-                        <p>Privacy Policy and Terms of Service</p>
-                        <p>CoinFlip Privacy Policy</p>
-                        <p>CoinFlip Biometrics Privacy Policy</p>
-                        <p>CoinFlip Terms of Service</p>
-                        <p>CoinFlip Trade Desk Terms of Service</p>
+                    <Col xs={6} md={3} lg={4} style={{ textDecoration: "none", color: 'inherit' }}>
+                    <h5 style={{fontWeight:'bold'}} className=' mb-4'>About Us</h5>
+                      
+                        <p><a href="https://www.bitpaisaa.com/#" style={{ textDecoration: "none", color: 'inherit' }}>Referral Program</a></p>
+                        <p><a href="https://www.bitpaisaa.com/#" style={{ textDecoration: "none", color: 'inherit' }}>Apply for Listing</a></p>
+                        <p><a href="https://www.bitpaisaa.com/announcement" style={{ textDecoration: "none", color: 'inherit' }}>Announcement</a></p>
+                        <p><a href="https://www.bitpaisaa.com/terms_conditions" style={{ textDecoration: "none", color: 'inherit' }}>Terms and Conditions</a></p>
+                        <p><a href="https://www.bitpaisaa.com/privacy" style={{ textDecoration: "none", color: 'inherit' }}>Privacy</a></p>
+                        <p><a href="https://www.bitpaisaa.com/risk" style={{ textDecoration: "none", color: 'inherit' }}>Risk</a></p>
+                        <p><a href="https://www.bitpaisaa.com/refund" style={{ textDecoration: "none", color: 'inherit' }}>Refund Policy</a></p>
+
                     </Col>
                 </Row>
             </Container>
