@@ -15,15 +15,17 @@ const ButtonCom = ({ name, bgcolor, border }) => {
 marginRight:"5px"
   };
 
-  const handleClick = () => {
-    if (name === 'Get Started') {
-      window.open('https://www.bitpaisaa.com/');
-    }
-  };
+  // const handleClick = () => {
+  //   if (name === 'Get Started') {
+  //     window.open('https://www.bitpaisaa.com/');
+  //   }
+  // };
 
   return (
     <div>
-      <button style={gradientStyle} onClick={handleClick}>
+      <button style={gradientStyle} 
+      // onClick={handleClick}
+      >
         {name}
       </button>
     </div>

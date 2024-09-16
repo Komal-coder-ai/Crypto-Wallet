@@ -1,0 +1,5 @@
+.fullbg {
+    background-image: url('./assets/ss/Full_bg.svg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }

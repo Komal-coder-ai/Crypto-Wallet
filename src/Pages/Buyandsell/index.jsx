@@ -1,3 +1,4 @@
+/* eslint-disable no-debugger */
 // import React from 'react';
 // import { FaArrowRight } from 'react-icons/fa';
 // import { Container, Row, Col, Table } from 'react-bootstrap';
@@ -112,17 +113,41 @@ import './index.css'; // Import the CSS file
 import { getAPIcall, homeExchangeAPI } from '../../api/apibase';
 import { SvgIcon } from '@mui/material';
 import ButtonCom from './../../components/button/index';
+// import Chart from "react-apexcharts";
+import ReactApexChart from 'react-apexcharts';
 
 const Buyandsell = () => {
   const [data, setData] = useState([]);
+  const [wallet, setWallet] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [visibleItems, setVisibleItems] = useState(7);
   const fetchHomeExchangeData = async () => {
     try {
       const result = await getAPIcall(homeExchangeAPI);
-      console.log(result.data, "111")
-      setData(result.data);
+      const inrPairs = result?.trade?.filter(item => item.pair_name.endsWith('/INR'));
+      console.log(inrPairs, "inrPairs")
+
+      const dataObj = inrPairs?.map((item) => {
+        const matchedWallet = result?.wallet?.find((value) => value.currency === item.from_symbol);
+
+        if (matchedWallet) {
+          return {
+            ...item,
+            image: matchedWallet.image,
+          };
+        }
+        return item;
+      });
+
+      console.log(dataObj, "dataObj")
+
+
+
+      setWallet(dataObj || []);
+
+
+
       console.log(data, "data")
     } catch (err) {
       console.error('Error fetching home exchange data:', err);
@@ -140,13 +165,252 @@ const Buyandsell = () => {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
 
+  // const options = {
+  //   chart: {
+  //     id: 'line-chart',
+  //   },
+    
+  //   stroke: {
+  //     curve: 'smooth',
+  //   },
+  //   toolbar: {
+  //     show: false,
+  //   },
+  //   zoom: {
+  //     enabled: false,
+  //   },
+  // };
 
-  // Function to load more items in increments
+
+  // const options = {
+  //   chart: {
+  //     id: 'line-chart',
+  //   },
+  //   stroke: {
+  //     curve: 'smooth',
+  //   },
+  //   toolbar: {
+  //     show: false,
+  //   },
+  //   zoom: {
+  //     enabled: false,
+  //   },
+  //   xaxis: {
+  //     labels: {
+  //       show: false, // Hide X axis labels
+  //     },
+  //     axisBorder: {
+  //       show: false, // Hide X axis border
+  //     },
+  //     axisTicks: {
+  //       show: false, // Hide X axis ticks
+  //     },
+  //   },
+  //   yaxis: {
+  //     labels: {
+  //       show: false, // Hide Y axis labels
+  //     },
+  //     axisBorder: {
+  //       show: false, // Hide Y axis border
+  //     },
+  //     axisTicks: {
+  //       show: false, // Hide Y axis ticks
+  //     },
+  //   },
+  //   dataLabels: {
+  //     enabled: false, // Hide data labels
+  //   },
+  // };
+  
+
+  // const options = {
+  //   chart: {
+  //     id: 'line-chart',
+  //   },
+  //   stroke: {
+  //     curve: 'smooth',
+  //   },
+  //   toolbar: {
+  //     show: false,
+  //   },
+  //   zoom: {
+  //     enabled: false,
+  //   },
+  //   xaxis: {
+  //     labels: {
+  //       show: false, // Hide X axis labels
+  //     },
+  //     axisBorder: {
+  //       show: false, // Hide X axis border
+  //     },
+  //     axisTicks: {
+  //       show: false, // Hide X axis ticks
+  //     },
+  //   },
+  //   yaxis: {
+  //     labels: {
+  //       show: false, // Hide Y axis labels
+  //     },
+  //     axisBorder: {
+  //       show: false, // Hide Y axis border
+  //     },
+  //     axisTicks: {
+  //       show: false, // Hide Y axis ticks
+  //     },
+  //   },
+  //   grid: {
+  //     show: false, // Hide grid lines
+  //   },
+  //   dataLabels: {
+  //     enabled: false, // Hide data labels
+  //   },
+  // };
+  
+
+  // const options = {
+  //   chart: {
+  //     id: 'line-chart',
+  //     toolbar: {
+  //       show: false, // Hides the entire toolbar including toolbox items
+  //     },
+  //   },
+  //   stroke: {
+  //     curve: 'smooth',
+  //   },
+  //   zoom: {
+  //     enabled: false, // Disable zoom functionality
+  //   },
+  //   xaxis: {
+  //     labels: {
+  //       show: false, // Hide X axis labels
+  //     },
+  //     axisBorder: {
+  //       show: false, // Hide X axis border
+  //     },
+  //     axisTicks: {
+  //       show: false, // Hide X axis ticks
+  //     },
+  //   },
+  //   yaxis: {
+  //     labels: {
+  //       show: false, // Hide Y axis labels
+  //     },
+  //     axisBorder: {
+  //       show: false, // Hide Y axis border
+  //     },
+  //     axisTicks: {
+  //       show: false, // Hide Y axis ticks
+  //     },
+  //   },
+  //   grid: {
+  //     show: false, // Hide grid lines
+  //   },
+  //   dataLabels: {
+  //     enabled: false, // Hide data labels
+  //   },
+    
+  // };
+
+  const options = {
+    chart: {
+      id: 'line-chart',
+      toolbar: {
+        show: false,
+      },
+      zoom: {
+        enabled: false,
+      },
+    },
+    plotOptions: {
+      line: {
+        dataLabels: {
+          enabled: false,
+        },
+        markers: {
+          size: 0, // Hides markers
+          hover: {
+            size: 0, // Hides hover effect on markers
+          },
+        },
+      },
+    },
+    stroke: {
+      curve: 'smooth',
+    },
+    xaxis: {
+      labels: {
+        show: false, // Hide x-axis labels
+      },
+      axisBorder: {
+        show: false, // Hide x-axis border line
+      },
+      axisTicks: {
+        show: false, // Hide x-axis ticks
+      },
+    },
+    yaxis: {
+      labels: {
+        show: false, // Hide y-axis labels
+      },
+      axisBorder: {
+        show: false, // Hide y-axis border line
+      },
+      axisTicks: {
+        show: false, // Hide y-axis ticks
+      },
+    },
+    grid: {
+      show: false, // Hide grid lines
+    },
+    tooltip: {
+      enabled: false, // Disable tooltips
+    },
+    dataLabels: {
+      enabled: false, // Disable data labels
+    },
+  };
+  
+
+  // const options = {
+  //   chart: {
+  //     id: 'line-chart',
+  //     toolbar: {
+  //       show: false,
+  //     },
+  //     zoom: {
+  //       enabled: false,
+  //     },
+  //   },
+  
+  //   stroke: {
+  //     curve: 'smooth',
+  //   },
+  //   xaxis: {
+  //     labels: {
+  //       show: false,
+  //     },
+  //   },
+  //   yaxis: {
+  //     labels: {
+  //       show: false,
+  //     },
+  //   },
+  //   grid: {
+  //     show: false,
+  //   },
+  //   tooltip: {
+  //     enabled: false, // Disable tooltips
+  //   },
+  //   dataLabels: {
+  //     enabled: false, // Disable data labels
+  //   },
+  // };
+
   const showMoreItems = () => {
     setVisibleItems((prevVisible) => prevVisible + 7);
   };
   return (
-    <div className='BuyAndsellContainer'>
+    <div className='BuyAndsellContainer' style={{ marginTop: "-100px" }}>
       <Container>
         <Row className='justify-content-center align-items-center'>
           <Col xs={12} md={8} lg={8} className='text-center mb-4 ButAndselltext'>
@@ -161,9 +425,14 @@ const Buyandsell = () => {
             <div className="TableContainer">
               <Table responsive className="text-center">
                 <tbody>
-                  {data.slice(0, visibleItems).map((item, index) => (
-                    <tr key={index} className="TableRow">
-                      <td style={{ background: "none" }}>
+                  {/* {wallet.slice(0, visibleItems).map((item, index) => ( */}
+                  {wallet?.slice(0, visibleItems)?.map((item, index) => (
+                    <tr key={index} className="TableRow" style={{
+                      display:"flex" ,
+                      justifyContent:"space-between",
+                      alignItems:"center"
+                    }}>
+                      <td style={{ background: "none" ,    borderBottom: "none" }}>
                         <img
                           src={item.image}
                           alt=""
@@ -173,9 +442,25 @@ const Buyandsell = () => {
                       </td>
                       <td className="table_data firstcol">{item.from_symbol}</td>
                       <td className="table_data col_3">{item.last_price}</td>
-                      <td className="table_data col_4">+{item.change}%</td>
+                      <td className="table_data col_4">
+                        {item.change >= 0 ? `+${item.change}%` : `${item.change}%`}
+                      </td>
                       <td className="table_data ForMobile">
-                        <img src={linebarchart} alt="Chart" />
+                        {/* <img src={linebarchart} alt="Chart" /> */}
+                        <ReactApexChart
+                          options={options}
+                          series={
+                            [
+                              {
+                                name: 'Sales',
+                                data: [item?.low, item?.high],
+                              },
+                            ]
+                          }
+                          type="line"
+                          height={100}
+                          width={ 100} 
+                        />
                       </td>
                       <td className='d-flex table_data'>
                         <a href="#trade-now" className="TableLink">
@@ -189,7 +474,7 @@ const Buyandsell = () => {
             </div>
           </Col>
         </Row>
-        {visibleItems < data.length && (
+        {visibleItems < wallet.length && (
           <Row className='justify-content-center'>
             <div className=""
               onClick={showMoreItems}
@@ -207,3 +492,13 @@ const Buyandsell = () => {
 };
 
 export default Buyandsell;
+
+
+
+
+
+
+
+
+
+

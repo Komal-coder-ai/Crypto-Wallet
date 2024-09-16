@@ -3,8 +3,8 @@ import axios from 'axios';
 const baseurl = "https://api.dev.bitpaisaa.technotoil.com/";
 
 
-export const homeExchangeAPI = baseurl + "user/home/exchange/coinPairs";
-
+// export const homeExchangeAPI = baseurl + "user/home/exchange/coinPairs";
+export const homeExchangeAPI = baseurl + "user/homeExchange";
 
 export const getAPIcall = async (endpoint, params = {}) => {
     try {

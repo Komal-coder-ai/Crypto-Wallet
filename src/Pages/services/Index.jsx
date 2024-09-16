@@ -16,7 +16,7 @@ const Service = () => {
       mt: { xs: 8, sm: 10 }, 
     }}
     >
-      <Grid container justifyContent="center" alignItems="center">
+      <Grid container justifyContent="center" alignItems="center" mt={-20}>
         <Grid item xs={12} sm={6} md={6} lg={6} display="flex" justifyContent="center" alignItems="center">
           <img src={servicelogo} alt="Service Logo" style={{ maxWidth: '100%', height: 'auto' }} />
         </Grid>
