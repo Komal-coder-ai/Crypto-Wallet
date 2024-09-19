@@ -105,7 +105,7 @@
 
 
 import React, { useEffect, useState } from 'react';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaArrowUp } from 'react-icons/fa';
 import { Container, Row, Col, Table, Button } from 'react-bootstrap';
 import { FiArrowRight } from 'react-icons/fi';
 import linebarchart from '../../assets/icon/Chart.svg';
@@ -115,6 +115,7 @@ import { SvgIcon } from '@mui/material';
 import ButtonCom from './../../components/button/index';
 // import Chart from "react-apexcharts";
 import ReactApexChart from 'react-apexcharts';
+import { FaArrowDownLong } from 'react-icons/fa6';
 
 const Buyandsell = () => {
   const [data, setData] = useState([]);
@@ -128,17 +129,19 @@ const Buyandsell = () => {
       const inrPairs = result?.trade?.filter(item => item.pair_name.endsWith('/INR'));
       console.log(inrPairs, "inrPairs")
 
-      const dataObj = inrPairs?.map((item) => {
-        const matchedWallet = result?.wallet?.find((value) => value.currency === item.from_symbol);
+      const dataObj = result?.wallet
+        ?.map((item) => {
+          const matchedWallet = inrPairs?.find((value) => value.from_symbol === item.currency);
 
-        if (matchedWallet) {
-          return {
-            ...item,
-            image: matchedWallet.image,
-          };
-        }
-        return item;
-      });
+          if (matchedWallet) {
+            return {
+              ...matchedWallet,
+              ...item,
+            };
+          }
+          return null;
+        })
+        ?.filter(item => item !== null);
 
       console.log(dataObj, "dataObj")
 
@@ -368,6 +371,16 @@ const Buyandsell = () => {
     dataLabels: {
       enabled: false, // Disable data labels
     },
+    colors: ['#DC8DF8'], // Fallback color
+    fill: {
+      type: 'gradient',
+      gradient: {
+        shade: 'light',
+        type: 'vertical', // Or 'horizontal' depending on your design
+        gradientToColors: ['#18C8FF'], // Ending color of the gradient
+        stops: [0, 100], // Define how the colors transition
+      },
+    },
   };
 
 
@@ -425,40 +438,64 @@ const Buyandsell = () => {
             <div className="TableContainer">
               <Table responsive className="text-center">
                 <tbody>
-                  {/* {wallet.slice(0, visibleItems).map((item, index) => ( */}
+                  {/* {/ {wallet.slice(0, visibleItems).map((item, index) => ( /} */}
                   {wallet?.slice(0, visibleItems)?.map((item, index) => (
                     <tr key={index} className="TableRow" style={{
                       display: "flex",
                       justifyContent: "space-between",
-                      alignItems: "center"
+                      alignItems: "center",
+                      height: "60px",
+                      overflow: "hidden",
                     }}>
-                      <td style={{ background: "none", borderBottom: "none" }}>
+                      <td style={{ background: "none", borderBottom: "none" }}
+                   
+                      >
                         <img
-                          src={item.image}
+                          src={item?.image}
                           alt=""
                           width={25}
                           style={{ borderRadius: "50%" }}
                         />
                       </td>
-                      <td className="table_data firstcol">{item.from_symbol}</td>
-                      <td className="table_data col_3">{item.last_price}</td>
-                      <td className="table_data col_4">
-                        {item.change >= 0 ? `+${item.change}%` : `${item.change}%`}
+                      <td className="table_data firstcol"
+                         style={{ width: "50px"}}
+                      >{item?.currency}</td>
+                      <td className="table_data col_3"
+                        style={{ width: "150px", textAlign: "left !important" }}
+                      >{item?.last_price}</td>
+                      {/* <td className="table_data col_4">
+                        {item?.change >= 0 ? `+${item?.change}%` : `${item?.change}%`}
+                      </td> */}
+                      <td className="table_data col_4"
+                        style={{
+                          textAlign: "left !important",
+
+                        }}
+                      >
+                        {item.change >= 0 ? (
+                          <span style={{ color: "green" }}>
+                            <FaArrowUp /> {item.change}%
+                          </span>
+                        ) : (
+                          <span style={{ color: "red" }}>
+                            <FaArrowDownLong />{item.change.toString().replace("-", "")}%
+                          </span>
+                        )}
                       </td>
                       <td className="table_data ForMobile">
-                        {/* <img src={linebarchart} alt="Chart" /> */}
+                        {/* {/ <img src={linebarchart} alt="Chart" /> /} */}
                         <ReactApexChart
                           options={options}
                           series={
                             [
                               {
                                 name: 'Sales',
-                                data: [item?.low, item?.high],
+                                data: [item?.low, item?.high, item?.base_volume, item?.change],
                               },
                             ]
                           }
                           type="line"
-                          height={100}
+                          height={80}
                           width={100}
                         />
                       </td>

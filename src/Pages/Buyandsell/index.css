@@ -41,8 +41,8 @@
   background: none;
   color: white;
   border: none;
-
-  font-size: 20px;
+  text-align: left;
+  font-size: 14px;
   font-weight: 700;
   line-height: 30px;
 
@@ -69,7 +69,7 @@
 
 .TableContainer .col_4 {
   color: var(--green-color);
-  text-align: end;
+  text-align: left;
 }
 
 
@@ -116,16 +116,19 @@
 }
 
 @media screen and (min-width: 618px) and (max-width: 677px) {
-  .ButAndselltext{
-   margin-top: 50px;
+  .ButAndselltext {
+    margin-top: 50px;
   }
 }
 
 .TableContainer {
   width: 100%;
-  overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
-  padding: 20px; /* Adjust overall padding */
-  border-radius: 25px; /* Rounded corners */
+  overflow-x: auto;
+  /* Enable horizontal scrolling on smaller screens */
+  padding: 20px;
+  /* Adjust overall padding */
+  border-radius: 25px;
+  /* Rounded corners */
   background-color: var(--bg-black);
 }
 
@@ -133,7 +136,7 @@
   background-color: var(--bg-black);
   border-top: 1px solid #2B2C3B;
   border-bottom: 1px solid #2B2C3B;
-  
+
 }
 
 .TableLink {
@@ -146,7 +149,8 @@
 }
 
 .table_data {
-  padding: 12px 20px; /* Adjust padding inside each table cell */
+  padding: 12px 20px;
+  /* Adjust padding inside each table cell */
   color: white;
   font-size: 20px;
   font-weight: 700;
@@ -155,6 +159,7 @@
 
 @media (max-width: 575.98px) {
   .table_data {
-    font-size: 14px; /* Adjust font size for smaller screens */
+    font-size: 14px;
+    /* Adjust font size for smaller screens */
   }
 }
