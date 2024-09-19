@@ -156,10 +156,11 @@
   font-weight: 700;
   line-height: 30px;
 }
-
+  
 @media (max-width: 575.98px) {
   .table_data {
     font-size: 14px;
     /* Adjust font size for smaller screens */
   }
 }
+

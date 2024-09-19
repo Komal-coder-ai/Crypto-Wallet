@@ -116,7 +116,7 @@ import ButtonCom from './../../components/button/index';
 // import Chart from "react-apexcharts";
 import ReactApexChart from 'react-apexcharts';
 import { FaArrowDownLong } from 'react-icons/fa6';
-
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 const Buyandsell = () => {
   const [data, setData] = useState([]);
   const [wallet, setWallet] = useState([]);
@@ -126,26 +126,26 @@ const Buyandsell = () => {
   const fetchHomeExchangeData = async () => {
     try {
       const result = await getAPIcall(homeExchangeAPI);
-      const inrPairs = result?.trade?.filter(item => item.pair_name.endsWith('/INR'));
+      const inrPairs = result?.trade?.filter(item => item.to_symbol === "INR");
       console.log(inrPairs, "inrPairs")
 
       const dataObj = result?.wallet
-        ?.map((item) => {
-          const matchedWallet = inrPairs?.find((value) => value.from_symbol === item.currency);
-
-          if (matchedWallet) {
-            return {
-              ...matchedWallet,
-              ...item,
-            };
-          }
-          return null;
-        })
-        ?.filter(item => item !== null);
+      ?.map((item) => {
+        const matchedWallet = inrPairs?.find((value) => value.from_symbol === item.currency);
+    
+        if (matchedWallet) {
+          return {
+            ...matchedWallet,
+            ...item,
+          };
+        }
+        return null; 
+      })
+      ?.filter(item => item !== null); 
 
       console.log(dataObj, "dataObj")
 
-
+    
 
       setWallet(dataObj || []);
 
@@ -339,7 +339,9 @@ const Buyandsell = () => {
     },
     stroke: {
       curve: 'smooth',
+      width: 3,
     },
+    colors: ['var(--dargreen--color)'],
     xaxis: {
       labels: {
         show: false, // Hide x-axis labels
@@ -371,16 +373,8 @@ const Buyandsell = () => {
     dataLabels: {
       enabled: false, // Disable data labels
     },
-    colors: ['#DC8DF8'], // Fallback color
-    fill: {
-      type: 'gradient',
-      gradient: {
-        shade: 'light',
-        type: 'vertical', // Or 'horizontal' depending on your design
-        gradientToColors: ['#18C8FF'], // Ending color of the gradient
-        stops: [0, 100], // Define how the colors transition
-      },
-    },
+
+
   };
 
 
@@ -448,7 +442,7 @@ const Buyandsell = () => {
                       overflow: "hidden",
                     }}>
                       <td style={{ background: "none", borderBottom: "none" }}
-                   
+
                       >
                         <img
                           src={item?.image}
@@ -458,7 +452,7 @@ const Buyandsell = () => {
                         />
                       </td>
                       <td className="table_data firstcol"
-                         style={{ width: "50px"}}
+                        style={{ width: "50px" }}
                       >{item?.currency}</td>
                       <td className="table_data col_3"
                         style={{ width: "150px", textAlign: "left !important" }}
@@ -469,15 +463,19 @@ const Buyandsell = () => {
                       <td className="table_data col_4"
                         style={{
                           textAlign: "left !important",
-
+width: "100px"
                         }}
                       >
                         {item.change >= 0 ? (
-                          <span style={{ color: "green" }}>
-                            <FaArrowUp /> {item.change}%
+                          <span style={{ color: "var(--dargreen--color)" }}>
+
+                            <ArrowUpwardIcon
+                              sx={{ fontSize: "18px", marginBottom: "4px" }}
+                            />
+                            {item.change}%
                           </span>
                         ) : (
-                          <span style={{ color: "red" }}>
+                          <span style={{ color: "var(--varred-color)" }}>
                             <FaArrowDownLong />{item.change.toString().replace("-", "")}%
                           </span>
                         )}
@@ -499,7 +497,9 @@ const Buyandsell = () => {
                           width={100}
                         />
                       </td>
-                      <td className='d-flex table_data'>
+                      <td className='d-flex table_data' 
+                      style={{width: "150px"}}
+                      >
                         <a href="#trade-now" className="TableLink">
                           Trade Now <span><FiArrowRight className="ml-1" /></span>
                         </a>
