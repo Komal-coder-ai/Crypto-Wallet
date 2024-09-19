@@ -169,7 +169,7 @@ const Buyandsell = () => {
   //   chart: {
   //     id: 'line-chart',
   //   },
-    
+
   //   stroke: {
   //     curve: 'smooth',
   //   },
@@ -221,7 +221,7 @@ const Buyandsell = () => {
   //     enabled: false, // Hide data labels
   //   },
   // };
-  
+
 
   // const options = {
   //   chart: {
@@ -265,7 +265,7 @@ const Buyandsell = () => {
   //     enabled: false, // Hide data labels
   //   },
   // };
-  
+
 
   // const options = {
   //   chart: {
@@ -308,7 +308,7 @@ const Buyandsell = () => {
   //   dataLabels: {
   //     enabled: false, // Hide data labels
   //   },
-    
+
   // };
 
   const options = {
@@ -369,7 +369,7 @@ const Buyandsell = () => {
       enabled: false, // Disable data labels
     },
   };
-  
+
 
   // const options = {
   //   chart: {
@@ -381,7 +381,7 @@ const Buyandsell = () => {
   //       enabled: false,
   //     },
   //   },
-  
+
   //   stroke: {
   //     curve: 'smooth',
   //   },
@@ -428,11 +428,11 @@ const Buyandsell = () => {
                   {/* {wallet.slice(0, visibleItems).map((item, index) => ( */}
                   {wallet?.slice(0, visibleItems)?.map((item, index) => (
                     <tr key={index} className="TableRow" style={{
-                      display:"flex" ,
-                      justifyContent:"space-between",
-                      alignItems:"center"
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center"
                     }}>
-                      <td style={{ background: "none" ,    borderBottom: "none" }}>
+                      <td style={{ background: "none", borderBottom: "none" }}>
                         <img
                           src={item.image}
                           alt=""
@@ -459,7 +459,7 @@ const Buyandsell = () => {
                           }
                           type="line"
                           height={100}
-                          width={ 100} 
+                          width={100}
                         />
                       </td>
                       <td className='d-flex table_data'>
